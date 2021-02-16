@@ -17,8 +17,6 @@ const TableOfContentsScreen = ({ navigation }) => {
 
 			<Text style={styles.titleText}>Table of Contents</Text>
 
-			<Image source={require("../assets/samurai.png")} style={styles.image} />
-
 			<TouchableOpacity
 				style={styles.button}
 				onPress={() => navigation.navigate("Welcome")}
