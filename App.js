@@ -19,7 +19,7 @@ const Stack = createStackNavigator();
 export default function App() {
 	const globalScreenOptions = {
 		// The constant globalScreenOptions stores the below css styles
-		headerStyle: { backgroundColor: "#2c68ed" },
+		headerStyle: { backgroundColor: "darkred" },
 		headerTitleStyle: { color: "white" },
 		headerTintiColor: "white"
 	};
