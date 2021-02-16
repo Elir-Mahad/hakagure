@@ -1,19 +1,15 @@
 //
-import React, { useState } from "react";
-import { StyleSheet, TouchableOpacity } from "react-native";
+import React from "react";
+import { StyleSheet, TouchableOpacity, Text } from "react-native";
 import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
 //
-import { Image, Text } from "react-native-elements";
+import { Image } from "react-native-elements";
 
 //!------------------------------------------------------------IMPORTS
 
 const WelcomeScreen = ({ navigation }) => {
-	//
-	const titleText = useState("Hagakure");
-	const bodyText = useState("This is a quote");
-	const buttonText = useState("Click Me");
 	//
 	return (
 		<KeyboardAvoidingView style={styles.container}>
@@ -23,14 +19,16 @@ const WelcomeScreen = ({ navigation }) => {
 				style={{ width: 200, height: 200 }}
 			/>
 
-			<Text style={styles.titleText}> {titleText}</Text>
-			<Text style={styles.bodyText}> {bodyText}</Text>
+			<Text style={styles.titleText}> Hagakure</Text>
+			{/*  */}
+			<Text style={styles.bodyText}> This is a quote </Text>
 
 			<TouchableOpacity
+				//
 				style={styles.button}
 				onPress={() => navigation.navigate("Table of Contents")}
 			>
-				<Text style={styles.buttonText}>{buttonText}</Text>
+				<Text style={styles.buttonText}>Click Me</Text>
 			</TouchableOpacity>
 		</KeyboardAvoidingView>
 	);
@@ -47,10 +45,14 @@ const styles = StyleSheet.create({
 	},
 	titleText: {
 		fontSize: 20,
-		fontWeight: "bold"
+		fontWeight: "bold",
+		paddingTop: 5,
+		paddingBottom: 5
 	},
 	bodyText: {
-		fontSize: 20
+		fontSize: 20,
+		paddingTop: 5,
+		paddingBottom: 5
 	},
 	button: {
 		paddingRight: 10,
@@ -63,6 +65,8 @@ const styles = StyleSheet.create({
 	},
 	buttonText: {
 		color: "white",
-		fontSize: 15
+		fontSize: 15,
+		paddingTop: 5,
+		paddingBottom: 5
 	}
 });

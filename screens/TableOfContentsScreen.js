@@ -1,15 +1,16 @@
 //
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
 //
-import { Button, Text } from "react-native-elements";
+import { Text } from "react-native-elements";
 
 //!-------------------------------------------------IMPORTS
 
 const TableOfContentsScreen = ({ navigation }) => {
+	//
 	return (
 		<KeyboardAvoidingView style={styles.container}>
 			<StatusBar style="light" />
@@ -22,18 +23,13 @@ const TableOfContentsScreen = ({ navigation }) => {
 				Table of Contents
 			</Text>
 
-			<Button
-				// Button is a react-native element.
-				title="First Chapter"
-				containerStyle={styles.button}
+			<TouchableOpacity
+				//
+				style={styles.button}
 				onPress={() => navigation.navigate("Welcome")}
-			/>
-
-			<View
-				style={{ height: 100 }}
-				// This ensures that when the keyboard pops up,
-				// it dosen't overlap with the whole view/div
-			/>
+			>
+				<Text style={styles.buttonText}>First Chapter</Text>
+			</TouchableOpacity>
 		</KeyboardAvoidingView>
 	);
 };
@@ -49,7 +45,18 @@ const styles = StyleSheet.create({
 		backgroundColor: "white"
 	},
 	button: {
-		width: 200,
-		marginTop: 10
+		paddingRight: 10,
+		paddingLeft: 10,
+		paddingTop: 5,
+		paddingBottom: 5,
+		borderRadius: 3,
+		backgroundColor: "darkred",
+		alignItems: "center"
+	},
+	buttonText: {
+		color: "white",
+		fontSize: 15,
+		paddingTop: 5,
+		paddingBottom: 5
 	}
 });
