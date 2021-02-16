@@ -10,7 +10,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 // below are the different screen components
 import WelcomeScreen from "./screens/WelcomeScreen";
 import TableOfContentsScreen from "./screens/TableOfContentsScreen";
-import EducationScreen from "./screens/EducationScreen";
+import EduOneScreen from "./screens/EduOneScreen";
+import EduTwoScreen from "./screens/EduTwoScreen";
 
 // below are the imports for two different fonts
 import AppLoading from "expo-app-loading"; // app-loading is a necessary expo feature for uploading fonts
@@ -62,8 +63,12 @@ export default function App() {
 					component={TableOfContentsScreen} // Import the component
 				/>
 				<Stack.Screen
-					name="Education" // Give the component a name
-					component={EducationScreen} // Import the component
+					name="Education 1" // Give the component a name
+					component={EduOneScreen} // Import the component
+				/>
+				<Stack.Screen
+					name="Education 2" // Give the component a name
+					component={EduTwoScreen} // Import the component
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>

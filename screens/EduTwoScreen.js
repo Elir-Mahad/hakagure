@@ -9,7 +9,7 @@ import { Image } from "react-native-elements";
 
 //!------------------------------------------------------------IMPORTS
 
-const EducationScreen = ({ navigation }) => {
+const EduTwoScreen = ({ navigation }) => {
 	//
 	return (
 		<KeyboardAvoidingView style={styles.container}>
@@ -21,12 +21,10 @@ const EducationScreen = ({ navigation }) => {
 				source={require("../assets/hagakurelogo.png")}
 			/>
 			{/*  */}
-			<Text style={styles.titleText}> Education </Text>
-			{/*  */}
 
 			<Text style={styles.bodyText}>
-				When one is writing a letter, he should think that the recipient will
-				make it into a hanging scroll.
+				We learn about the sayings and deeds of the men of old in order to
+				entrust ourselves to their wisdom and prevent selfishness.
 			</Text>
 			{/*  */}
 			<TouchableOpacity
@@ -40,7 +38,7 @@ const EducationScreen = ({ navigation }) => {
 		</KeyboardAvoidingView>
 	);
 };
-export default EducationScreen;
+export default EduTwoScreen;
 
 const styles = StyleSheet.create({
 	container: {
@@ -51,15 +49,10 @@ const styles = StyleSheet.create({
 		paddingRight: 10,
 		backgroundColor: "white"
 	},
-	titleText: {
-		fontSize: 30,
-		paddingTop: 5,
-		paddingBottom: 5
-	},
-	subtitleText: {
-		fontSize: 20,
-		paddingTop: 5,
-		paddingBottom: 5
+	image: {
+		width: 150,
+		height: 150,
+		borderRadius: 100
 	},
 	bodyText: {
 		fontFamily: "PatrickHand_400Regular",
@@ -68,15 +61,11 @@ const styles = StyleSheet.create({
 		marginLeft: 20,
 		marginRight: 20,
 		marginBottom: 20,
+		marginTop: 20,
 		textAlign: "center",
 		borderRadius: 5,
 		borderColor: "black",
 		borderWidth: 2
-	},
-	image: {
-		width: 150,
-		height: 150,
-		borderRadius: 100
 	},
 	button: {
 		paddingRight: 10,

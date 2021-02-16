@@ -24,7 +24,7 @@ const TableOfContentsScreen = ({ navigation }) => {
 
 			<TouchableOpacity
 				style={styles.button}
-				onPress={() => navigation.navigate("Education")}
+				onPress={() => navigation.navigate("Education 1")}
 			>
 				<Text style={styles.buttonText}> On Education </Text>
 			</TouchableOpacity>
