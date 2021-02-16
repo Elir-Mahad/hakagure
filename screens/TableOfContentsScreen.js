@@ -17,11 +17,16 @@ const TableOfContentsScreen = ({ navigation }) => {
 
 			<Text style={styles.titleText}>Table of Contents</Text>
 
+			<Image
+				style={styles.image}
+				source={require("../assets/hagakurelogo.png")}
+			/>
+
 			<TouchableOpacity
 				style={styles.button}
-				onPress={() => navigation.navigate("Welcome")}
+				onPress={() => navigation.navigate("Education")}
 			>
-				<Text style={styles.buttonText}>First Chapter</Text>
+				<Text style={styles.buttonText}> On Education </Text>
 			</TouchableOpacity>
 
 			<TouchableOpacity
@@ -79,7 +84,8 @@ const styles = StyleSheet.create({
 		width: 100,
 		height: 100,
 		marginBottom: 15,
-		marginTop: 15
+		marginTop: 15,
+		borderRadius: 100
 	},
 	button: {
 		marginBottom: 15,
@@ -94,8 +100,10 @@ const styles = StyleSheet.create({
 	},
 	buttonText: {
 		color: "white",
-		fontSize: 20,
+		fontSize: 17,
 		paddingTop: 5,
-		paddingBottom: 5
+		paddingBottom: 5,
+		paddingLeft: 20,
+		paddingRight: 20
 	}
 });

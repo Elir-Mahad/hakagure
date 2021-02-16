@@ -9,7 +9,7 @@ import { Image } from "react-native-elements";
 
 //!------------------------------------------------------------IMPORTS
 
-const WelcomeScreen = ({ navigation }) => {
+const EducationScreen = ({ navigation }) => {
 	//
 	return (
 		<KeyboardAvoidingView style={styles.container}>
@@ -21,15 +21,12 @@ const WelcomeScreen = ({ navigation }) => {
 				source={require("../assets/hagakurelogo.png")}
 			/>
 			{/*  */}
-			<Text style={styles.titleText}> Hagakure 葉隠</Text>
+			<Text style={styles.titleText}> Education </Text>
 			{/*  */}
-			<Text style={styles.subtitleText}> Yamamoto Tsunetomo </Text>
-			{/*  */}
+
 			<Text style={styles.bodyText}>
-				Written during a time when there was no officially sanctioned samurai
-				fighting, the book grapples with the dilemma of maintaining a warrior
-				class in the absence of war and reflects the author's nostalgia for a
-				world that had disappeared before he was born.
+				When one is writing a letter, he should think that the recipient will
+				make it into a hanging scroll.
 			</Text>
 			{/*  */}
 			<TouchableOpacity
@@ -37,13 +34,13 @@ const WelcomeScreen = ({ navigation }) => {
 				style={styles.button}
 				onPress={() => navigation.navigate("Table of Contents")}
 			>
-				<Text style={styles.buttonText}>Table of Contents</Text>
+				<Text style={styles.buttonText}>Next</Text>
 			</TouchableOpacity>
 			{/*  */}
 		</KeyboardAvoidingView>
 	);
 };
-export default WelcomeScreen;
+export default EducationScreen;
 
 const styles = StyleSheet.create({
 	container: {
@@ -66,7 +63,7 @@ const styles = StyleSheet.create({
 	},
 	bodyText: {
 		fontFamily: "PatrickHand_400Regular",
-		fontSize: 22,
+		fontSize: 30,
 		padding: 5,
 		marginLeft: 20,
 		marginRight: 20,
@@ -92,8 +89,10 @@ const styles = StyleSheet.create({
 	},
 	buttonText: {
 		color: "white",
-		fontSize: 15,
+		fontSize: 17,
 		paddingTop: 5,
-		paddingBottom: 5
+		paddingBottom: 5,
+		paddingLeft: 20,
+		paddingRight: 20
 	}
 });
