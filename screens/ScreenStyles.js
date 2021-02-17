@@ -105,6 +105,7 @@ export default StyleSheet.create({
 		borderRadius: 100
 	},
 	edu_bodyText: {
+		color: "white",
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 23,
 		padding: 5,
@@ -116,5 +117,10 @@ export default StyleSheet.create({
 		borderRadius: 5,
 		borderColor: "black",
 		borderWidth: 2
+	},
+	backgroundimage: {
+		flex: 1,
+		resizeMode: "cover",
+		justifyContent: "center"
 	}
 });

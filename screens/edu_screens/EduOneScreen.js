@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../ScreenStyles";
 //
-import { TouchableOpacity, Text } from "react-native";
+import { TouchableOpacity, Text, ImageBackground } from "react-native";
 import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 //
@@ -14,30 +14,35 @@ const EduOneScreen = ({ navigation }) => {
 	//
 	return (
 		<KeyboardAvoidingView style={styles.edu_container}>
-			{/*  */}
-			<StatusBar style="light" />
-			{/*  */}
-			<Image
-				style={styles.edu_image}
-				source={require("../screen_assets/hagakurelogo.png")}
-			/>
-			{/*  */}
-
-			<Text style={styles.edu_bodyText}>
-				When one is writing a letter, he should think that the recipient will
-				make it into a hanging scroll.
-			</Text>
-			{/*  */}
-			<TouchableOpacity
-				//
-				onPress={() => navigation.navigate("Education 2")}
+			<ImageBackground
+				source={require("../screen_assets/samuraiwarrior.png")}
+				style={styles.backgroundimage}
 			>
-				<Image
-					style={styles.right_arrow}
-					source={require("../screen_assets/right-arrow.png")}
-				/>
-			</TouchableOpacity>
-			{/*  */}
+				{/*  */}
+				<StatusBar style="light" />
+				{/*  */}
+				{/* <Image
+					style={styles.edu_image}
+					source={require("../screen_assets/hagakurelogo.png")}
+				/> */}
+				{/*  */}
+
+				<Text style={styles.edu_bodyText}>
+					When one is writing a letter, he should think that the recipient will
+					make it into a hanging scroll.
+				</Text>
+				{/*  */}
+				<TouchableOpacity
+					//
+					onPress={() => navigation.navigate("Education 2")}
+				>
+					<Image
+						style={styles.right_arrow}
+						source={require("../screen_assets/right-arrow.png")}
+					/>
+				</TouchableOpacity>
+				{/*  */}
+			</ImageBackground>
 		</KeyboardAvoidingView>
 	);
 };
