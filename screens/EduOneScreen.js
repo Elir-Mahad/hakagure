@@ -1,9 +1,9 @@
-//
 import React from "react";
+import styles from "./ScreenStyles";
+//
 import { TouchableOpacity, Text } from "react-native";
 import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import styles from "./ScreenStyles";
 //
 import { Image } from "react-native-elements";
 //
