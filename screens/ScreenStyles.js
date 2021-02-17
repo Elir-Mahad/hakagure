@@ -111,6 +111,7 @@ export default StyleSheet.create({
 		borderRadius: 100
 	},
 	edu_bodyText: {
+		backgroundColor: "lightgrey",
 		color: "black",
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 23,
