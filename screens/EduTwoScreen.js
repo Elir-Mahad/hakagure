@@ -29,7 +29,6 @@ const EduTwoScreen = ({ navigation }) => {
 			{/*  */}
 			<TouchableOpacity
 				//
-				style={styles.edu_button}
 				onPress={() => navigation.navigate("Table of Contents")}
 			>
 				<Image

@@ -38,7 +38,6 @@ const WelcomeScreen = ({ navigation }) => {
 				style={styles.welcome_button}
 				onPress={() => navigation.navigate("Table of Contents")}
 			>
-				{/* <Text style={styles.buttonText}>Table of Contents</Text> */}
 				<Image
 					style={styles.right_arrow}
 					source={require("../assets/right-arrow.png")}

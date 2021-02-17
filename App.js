@@ -15,6 +15,7 @@ import EduOneScreen from "./screens/EduOneScreen";
 import EduTwoScreen from "./screens/EduTwoScreen";
 
 // below are the necessary imports for custom fonts
+
 import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 
@@ -23,7 +24,7 @@ import AppLoading from "expo-app-loading";
 const getFonts = () =>
 	// the const getFonts stores the loaded fonts which are in the fonts folder
 	Font.loadAsync({
-		"inconsolate-regular": require("./assets/fonts/Inconsolata-Regular.ttf")
+		"Inconsolata-Regular": require("./assets/fonts/Inconsolata-Regular.ttf")
 	});
 
 //! ------------------------------------------------- APP functional component
@@ -39,19 +40,21 @@ export default function App() {
 
 	if (fontsLoaded) {
 		// if the fonts are loaded
-		return <WelcomeScreen />;
+		<WelcomeScreen />;
 		// then return the welcome screen
 	} else {
 		// othewrise
-		<AppLoading
-			// use expo app loading props
-			startAsync={getFonts}
-			// to get the fonts
-			onFinish={() => setFontsLoaded(true)}
-			// then change the boolean of the fontsLoaded constant to true
-			onError={console.warn}
-			// or if there is an error, then send a warning via console
-		/>;
+		return (
+			<AppLoading
+				// use expo app loading props
+				startAsync={getFonts}
+				// to get the fonts
+				onFinish={() => setFontsLoaded(true)}
+				// then change the boolean of the fontsLoaded constant to true
+				onError={console.warn}
+				// or if there is an error, then send a warning via console
+			/>
+		);
 	}
 
 	//--- Next we wil declare the global screen options and initialize the createStackNaviagtor

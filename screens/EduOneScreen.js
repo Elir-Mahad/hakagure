@@ -30,7 +30,6 @@ const EduOneScreen = ({ navigation }) => {
 			{/*  */}
 			<TouchableOpacity
 				//
-				style={styles.edu_button}
 				onPress={() => navigation.navigate("Education 2")}
 			>
 				<Image

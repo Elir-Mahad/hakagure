@@ -27,8 +27,8 @@ export default StyleSheet.create({
 		paddingBottom: 5
 	},
 	welcome_bodyText: {
-		fontFamily: "inconsolate-regular",
-		fontSize: 22,
+		fontFamily: "Inconsolata-Regular",
+		fontSize: 20,
 		padding: 5,
 		marginLeft: 20,
 		marginRight: 20,
@@ -37,15 +37,6 @@ export default StyleSheet.create({
 		borderRadius: 5,
 		borderColor: "black",
 		borderWidth: 2
-	},
-	welcome_button: {
-		paddingRight: 10,
-		paddingLeft: 10,
-		paddingTop: 5,
-		paddingBottom: 5,
-		borderRadius: 3,
-		backgroundColor: "darkred",
-		alignItems: "center"
 	},
 	right_arrow: {
 		width: 30,
@@ -62,7 +53,6 @@ export default StyleSheet.create({
 		backgroundColor: "white"
 	},
 	table_titleText: {
-		fontFamily: "inconsolate-regular",
 		fontSize: 25,
 		paddingRight: 10,
 		paddingLeft: 10,
@@ -91,7 +81,7 @@ export default StyleSheet.create({
 		width: 250
 	},
 	table_buttonText: {
-		fontFamily: "inconsolate-regular",
+		fontFamily: "Inconsolata-Regular",
 		color: "white",
 		fontSize: 17,
 		paddingTop: 5,
@@ -115,8 +105,8 @@ export default StyleSheet.create({
 		borderRadius: 100
 	},
 	edu_bodyText: {
-		fontFamily: "inconsolate-regular",
-		fontSize: 30,
+		fontFamily: "Inconsolata-Regular",
+		fontSize: 23,
 		padding: 5,
 		marginLeft: 20,
 		marginRight: 20,
@@ -126,22 +116,5 @@ export default StyleSheet.create({
 		borderRadius: 5,
 		borderColor: "black",
 		borderWidth: 2
-	},
-	edu_button: {
-		paddingRight: 10,
-		paddingLeft: 10,
-		paddingTop: 5,
-		paddingBottom: 5,
-		borderRadius: 3,
-		backgroundColor: "darkred",
-		alignItems: "center"
-	},
-	edu_buttonText: {
-		color: "white",
-		fontSize: 17,
-		paddingTop: 5,
-		paddingBottom: 5,
-		paddingLeft: 20,
-		paddingRight: 20
 	}
 });
