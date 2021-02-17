@@ -11,6 +11,9 @@ export default StyleSheet.create({
 		padding: 10,
 		backgroundColor: "white"
 	},
+	wrap_image: {
+		alignItems: "center"
+	},
 	welcome_image: {
 		width: 150,
 		height: 150,
@@ -37,6 +40,9 @@ export default StyleSheet.create({
 		borderRadius: 5,
 		borderColor: "black",
 		borderWidth: 2
+	},
+	edu_button: {
+		alignItems: "center"
 	},
 	right_arrow: {
 		width: 30,
@@ -105,7 +111,7 @@ export default StyleSheet.create({
 		borderRadius: 100
 	},
 	edu_bodyText: {
-		color: "white",
+		color: "black",
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 23,
 		padding: 5,
