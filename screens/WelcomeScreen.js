@@ -1,8 +1,9 @@
 //
 import React from "react";
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import { TouchableOpacity, Text } from "react-native";
 import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import styles from "./ScreenStyles";
 
 //
 import { Image } from "react-native-elements";
@@ -12,20 +13,20 @@ import { Image } from "react-native-elements";
 const WelcomeScreen = ({ navigation }) => {
 	//
 	return (
-		<KeyboardAvoidingView style={styles.container}>
+		<KeyboardAvoidingView style={styles.welcome_container}>
 			{/*  */}
 			<StatusBar style="light" />
 			{/*  */}
 			<Image
-				style={styles.image}
+				style={styles.welcome_image}
 				source={require("../assets/hagakurelogo.png")}
 			/>
 			{/*  */}
-			<Text style={styles.titleText}> Hagakure 葉隠</Text>
+			<Text style={styles.welcome_titleText}> Hagakure 葉隠</Text>
 			{/*  */}
-			<Text style={styles.subtitleText}> Yamamoto Tsunetomo </Text>
+			<Text style={styles.welcome_subtitleText}> Yamamoto Tsunetomo </Text>
 			{/*  */}
-			<Text style={styles.bodyText}>
+			<Text style={styles.welcome_bodyText}>
 				Written during a time when there was no officially sanctioned samurai
 				fighting, the book grapples with the dilemma of maintaining a warrior
 				class in the absence of war and reflects the author's nostalgia for a
@@ -34,7 +35,7 @@ const WelcomeScreen = ({ navigation }) => {
 			{/*  */}
 			<TouchableOpacity
 				//
-				style={styles.button}
+				style={styles.welcome_button}
 				onPress={() => navigation.navigate("Table of Contents")}
 			>
 				<Text style={styles.buttonText}>Table of Contents</Text>
@@ -44,56 +45,3 @@ const WelcomeScreen = ({ navigation }) => {
 	);
 };
 export default WelcomeScreen;
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
-		paddingLeft: 10,
-		paddingRight: 10,
-		backgroundColor: "white"
-	},
-	titleText: {
-		fontSize: 30,
-		paddingTop: 5,
-		paddingBottom: 5
-	},
-	subtitleText: {
-		fontSize: 20,
-		paddingTop: 5,
-		paddingBottom: 5
-	},
-	bodyText: {
-		fontFamily: "PatrickHand_400Regular",
-		fontSize: 22,
-		padding: 5,
-		marginLeft: 20,
-		marginRight: 20,
-		marginBottom: 20,
-		textAlign: "center",
-		borderRadius: 5,
-		borderColor: "black",
-		borderWidth: 2
-	},
-	image: {
-		width: 150,
-		height: 150,
-		borderRadius: 100
-	},
-	button: {
-		paddingRight: 10,
-		paddingLeft: 10,
-		paddingTop: 5,
-		paddingBottom: 5,
-		borderRadius: 3,
-		backgroundColor: "darkred",
-		alignItems: "center"
-	},
-	buttonText: {
-		color: "white",
-		fontSize: 15,
-		paddingTop: 5,
-		paddingBottom: 5
-	}
-});
