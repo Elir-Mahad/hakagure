@@ -1,5 +1,4 @@
 //! ------------------------------------------------- IMPORTS
-
 // below are foundational imports that come with the app
 import React, { useState } from "react";
 
@@ -7,9 +6,13 @@ import React, { useState } from "react";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 
+// below are the imports from react native elements
+import { Header } from "react-native-elements";
+
 // below are the different screen components
 import WelcomeScreen from "./screens/WelcomeScreen";
-import MainStackNavigator from "./screens/MainStackNavigator";
+import DrawerNavigator from "./screens/DrawerNavigator";
+// import StackNavigator from "./screens/StackNavigator";
 
 // below are the necessary imports for custom fonts
 import * as Font from "expo-font";
@@ -26,7 +29,6 @@ const getFonts = () =>
 //! ------------------------------------------------- APP functional component
 
 export default function App() {
-	//
 	// --- First we will initialize our fonts
 
 	const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -55,7 +57,17 @@ export default function App() {
 
 	return (
 		<NavigationContainer>
-			<MainStackNavigator />
+			<Header
+				// This header is from react-native-elements
+				// We have only have to use it for the drawer navigator.
+				// Explanaition regarding this is on the top of DrawerNavigator.js
+				backgroundColor="darkred"
+				placement="left"
+				leftComponent={{ icon: "menu", color: "#fff" }}
+				centerComponent={{ text: "Home", style: { color: "#fff" } }}
+			/>
+			<DrawerNavigator />
+			{/* <StackNavigator /> */}
 		</NavigationContainer>
 	);
 }

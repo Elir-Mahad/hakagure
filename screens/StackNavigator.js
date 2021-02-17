@@ -2,9 +2,8 @@
 // below are foundational imports that come with the app
 import React from "react";
 
-// below imports are from react navigation
+// below imports are from react stack navigation
 import { createStackNavigator } from "@react-navigation/stack";
-// import "react-native-gesture-handler";
 
 // below are the different screen components
 import WelcomeScreen from "./WelcomeScreen";
@@ -23,7 +22,8 @@ const globalScreenOptions = {
 
 const Stack = createStackNavigator();
 
-const MainStackNavigator = () => {
+const StackNavigator = () => {
+	//
 	return (
 		<Stack.Navigator screenOptions={globalScreenOptions}>
 			<Stack.Screen
@@ -46,4 +46,4 @@ const MainStackNavigator = () => {
 	);
 };
 
-export default MainStackNavigator;
+export default StackNavigator;
