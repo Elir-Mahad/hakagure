@@ -15,6 +15,7 @@ const EduOneScreen = ({ navigation }) => {
 	return (
 		<KeyboardAvoidingView style={styles.edu_container}>
 			<ImageBackground
+				// the below image wraps the whole view
 				source={require("../screen_assets/samuraiwarrior.png")}
 				style={styles.backgroundimage}
 			>
