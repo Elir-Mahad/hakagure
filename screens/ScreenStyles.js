@@ -27,7 +27,7 @@ export default StyleSheet.create({
 		paddingBottom: 5
 	},
 	welcome_bodyText: {
-		fontFamily: "PatrickHand_400Regular",
+		fontFamily: "inconsolate-regular",
 		fontSize: 22,
 		padding: 5,
 		marginLeft: 20,

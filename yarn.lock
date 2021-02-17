@@ -1024,6 +1024,11 @@
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/patrick-hand/-/patrick-hand-0.1.0.tgz#74689352cc029ed3390b9dfa1bb7495f2b4d623c"
   integrity sha512-6HnBeM0GpCnRg0+DT8nv+00plVPqSwv4PojfXOWVM/ddb18FdO66+Ow5AiOmvToAlNKve9YNDF76aNmPZArpdA==
 
+"@expo-google-fonts/roboto-mono@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/roboto-mono/-/roboto-mono-0.1.0.tgz#74854554e4b9550508878d3a603424baaec815e5"
+  integrity sha512-zIkuSXdA/5EGxlVIQ9V9LszgU3i5/dQM3CcPpHcyPtl+nCJOvaIf9IjDvSuTf/HDEJ5FR9A8Vt8u9Nheb24ifw==
+
 "@expo/babel-preset-cli@0.2.18":
   version "0.2.18"
   resolved "https://registry.yarnpkg.com/@expo/babel-preset-cli/-/babel-preset-cli-0.2.18.tgz#136acf8a0efe259e29ebc614b68552e5acb47d86"

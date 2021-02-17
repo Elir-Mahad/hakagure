@@ -1,6 +1,7 @@
+//! ------------------------------------------------- IMPORTS
+
 // below are foundational imports that come with the app
-import React from "react";
-// import { StyleSheet } from "react-native";
+import React, { useState } from "react";
 
 // below imports are from react navigation
 import "react-native-gesture-handler";
@@ -13,43 +14,57 @@ import TableOfContentsScreen from "./screens/TableOfContentsScreen";
 import EduOneScreen from "./screens/EduOneScreen";
 import EduTwoScreen from "./screens/EduTwoScreen";
 
-// below are the imports for two different fonts
-import AppLoading from "expo-app-loading"; // app-loading is a necessary expo feature for uploading fonts
-import {
-	useFonts,
-	PatrickHand_400Regular
-} from "@expo-google-fonts/patrick-hand";
+// below are the necessary imports for custom fonts
+import * as Font from "expo-font";
+import AppLoading from "expo-app-loading";
 
-//! ------------------------------------------------- IMPORTS
+//! ------------------------------------------------- getFonts function
 
-const Stack = createStackNavigator();
-// The contsant Stack is going to store all the screens
-
-export default function App() {
-	//!--------------------------------------------------FONTS
-
-	// First we will initialize our fonts
-
-	let [fontsLoaded] = useFonts({
-		// the constant fontsLoaded declares that we shall use the below fonts
-		PatrickHand_400Regular
+const getFonts = () =>
+	// the const getFonts stores the loaded fonts which are in the fonts folder
+	Font.loadAsync({
+		"inconsolate-regular": require("./assets/fonts/Inconsolata-Regular.ttf")
 	});
 
-	if (!fontsLoaded) {
-		// if the font's are loaded
-		return <AppLoading />;
-		// then proceed
-		// This conditional statement is part of the expo google-fonts code
+//! ------------------------------------------------- APP functional component
+
+export default function App() {
+	//
+	// --- First we will initialize our fonts
+
+	const [fontsLoaded, setFontsLoaded] = useState(false);
+	// (fontsLoaded) The constant fontsLoaded is boolean with value of false
+	// (setfontsLoaded) And we declare that we will mainpulate this boolean
+	// By wrapping the boolean in a UseState()
+
+	if (fontsLoaded) {
+		// if the fonts are loaded
+		return <WelcomeScreen />;
+		// then return the welcome screen
+	} else {
+		// othewrise
+		<AppLoading
+			// use expo app loading props
+			startAsync={getFonts}
+			// to get the fonts
+			onFinish={() => setFontsLoaded(true)}
+			// then change the boolean of the fontsLoaded constant to true
+			onError={console.warn}
+			// or if there is an error, then send a warning via console
+		/>;
 	}
 
-	//!-------------------------------------------------------------------------
+	//--- Next we wil declare the global screen options and initialize the createStackNaviagtor
 
-	let globalScreenOptions = {
+	const globalScreenOptions = {
 		// The constant globalScreenOptions stores the below css styles
 		headerStyle: { backgroundColor: "darkred" },
 		headerTitleStyle: { color: "white" },
 		headerTintiColor: "white"
 	};
+
+	const Stack = createStackNavigator();
+	// The contsant Stack is going to store all the screens
 
 	return (
 		<NavigationContainer>
