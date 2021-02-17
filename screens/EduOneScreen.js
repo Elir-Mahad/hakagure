@@ -33,7 +33,10 @@ const EduOneScreen = ({ navigation }) => {
 				style={styles.edu_button}
 				onPress={() => navigation.navigate("Education 2")}
 			>
-				<Text style={styles.edu_buttonText}>Next</Text>
+				<Image
+					style={styles.right_arrow}
+					source={require("../assets/right-arrow.png")}
+				/>
 			</TouchableOpacity>
 			{/*  */}
 		</KeyboardAvoidingView>

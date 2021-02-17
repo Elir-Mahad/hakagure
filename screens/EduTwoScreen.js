@@ -32,7 +32,10 @@ const EduTwoScreen = ({ navigation }) => {
 				style={styles.edu_button}
 				onPress={() => navigation.navigate("Table of Contents")}
 			>
-				<Text style={styles.edu_buttonText}>Next</Text>
+				<Image
+					style={styles.right_arrow}
+					source={require("../assets/right-arrow.png")}
+				/>
 			</TouchableOpacity>
 			{/*  */}
 		</KeyboardAvoidingView>

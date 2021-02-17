@@ -47,11 +47,9 @@ export default StyleSheet.create({
 		backgroundColor: "darkred",
 		alignItems: "center"
 	},
-	buttonText: {
-		color: "white",
-		fontSize: 15,
-		paddingTop: 5,
-		paddingBottom: 5
+	right_arrow: {
+		width: 30,
+		height: 30
 	},
 	//
 	// styles for table of contents
@@ -64,6 +62,7 @@ export default StyleSheet.create({
 		backgroundColor: "white"
 	},
 	table_titleText: {
+		fontFamily: "inconsolate-regular",
 		fontSize: 25,
 		paddingRight: 10,
 		paddingLeft: 10,
@@ -92,6 +91,7 @@ export default StyleSheet.create({
 		width: 250
 	},
 	table_buttonText: {
+		fontFamily: "inconsolate-regular",
 		color: "white",
 		fontSize: 17,
 		paddingTop: 5,
@@ -115,7 +115,7 @@ export default StyleSheet.create({
 		borderRadius: 100
 	},
 	edu_bodyText: {
-		fontFamily: "PatrickHand_400Regular",
+		fontFamily: "inconsolate-regular",
 		fontSize: 30,
 		padding: 5,
 		marginLeft: 20,
