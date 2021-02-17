@@ -22,8 +22,8 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 // below are the different screen components
 import WelcomeScreen from "./WelcomeScreen";
 import TableOfContentsScreen from "./TableOfContentsScreen";
-import EduOneScreen from "./EduOneScreen";
-import EduTwoScreen from "./EduTwoScreen";
+import EduOneScreen from "./edu_screens/EduOneScreen";
+import EduTwoScreen from "./edu_screens/EduTwoScreen";
 
 //!--- Initialize the createDrawerNaviagtor
 

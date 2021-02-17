@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ScreenStyles";
+import styles from "../ScreenStyles";
 //
 import { TouchableOpacity, Text } from "react-native";
 import { KeyboardAvoidingView } from "react-native";
@@ -19,7 +19,7 @@ const EduOneScreen = ({ navigation }) => {
 			{/*  */}
 			<Image
 				style={styles.edu_image}
-				source={require("../assets/hagakurelogo.png")}
+				source={require("../screen_assets/hagakurelogo.png")}
 			/>
 			{/*  */}
 
@@ -34,7 +34,7 @@ const EduOneScreen = ({ navigation }) => {
 			>
 				<Image
 					style={styles.right_arrow}
-					source={require("../assets/right-arrow.png")}
+					source={require("../screen_assets/right-arrow.png")}
 				/>
 			</TouchableOpacity>
 			{/*  */}

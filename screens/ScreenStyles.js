@@ -100,8 +100,8 @@ export default StyleSheet.create({
 		backgroundColor: "white"
 	},
 	edu_image: {
-		width: 150,
-		height: 150,
+		width: 70,
+		height: 70,
 		borderRadius: 100
 	},
 	edu_bodyText: {

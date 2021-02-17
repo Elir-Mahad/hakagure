@@ -19,7 +19,7 @@ const WelcomeScreen = ({ navigation }) => {
 			{/*  */}
 			<Image
 				style={styles.welcome_image}
-				source={require("../assets/hagakurelogo.png")}
+				source={require("../screens/screen_assets/hagakurelogo.png")}
 			/>
 			{/*  */}
 			<Text style={styles.welcome_titleText}> Hagakure 葉隠</Text>
@@ -40,7 +40,7 @@ const WelcomeScreen = ({ navigation }) => {
 			>
 				<Image
 					style={styles.right_arrow}
-					source={require("../assets/right-arrow.png")}
+					source={require("../screens/screen_assets/right-arrow.png")}
 				/>
 			</TouchableOpacity>
 			{/*  */}

@@ -19,7 +19,7 @@ const TableOfContentsScreen = ({ navigation }) => {
 
 			<Image
 				style={styles.table_image}
-				source={require("../assets/hagakurelogo.png")}
+				source={require("../screens/screen_assets/hagakurelogo.png")}
 			/>
 
 			<TouchableOpacity

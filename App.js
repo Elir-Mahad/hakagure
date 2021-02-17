@@ -7,12 +7,12 @@ import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 
 // below are the imports from react native elements
-import { Header } from "react-native-elements";
+// import { Header } from "react-native-elements";
 
 // below are the different screen components
 import WelcomeScreen from "./screens/WelcomeScreen";
-import DrawerNavigator from "./screens/DrawerNavigator";
-// import StackNavigator from "./screens/StackNavigator";
+// import DrawerNavigator from "./screens/DrawerNavigator";
+import StackNavigator from "./screens/StackNavigator";
 
 // below are the necessary imports for custom fonts
 import * as Font from "expo-font";
@@ -57,7 +57,7 @@ export default function App() {
 
 	return (
 		<NavigationContainer>
-			<Header
+			{/* <Header
 				// This header is from react-native-elements
 				// We have only have to use it for the drawer navigator.
 				// Explanaition regarding this is on the top of DrawerNavigator.js
@@ -66,8 +66,8 @@ export default function App() {
 				leftComponent={{ icon: "menu", color: "#fff" }}
 				centerComponent={{ text: "Home", style: { color: "#fff" } }}
 			/>
-			<DrawerNavigator />
-			{/* <StackNavigator /> */}
+			<DrawerNavigator /> */}
+			<StackNavigator />
 		</NavigationContainer>
 	);
 }
