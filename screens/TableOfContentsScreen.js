@@ -20,21 +20,21 @@ const TableOfContentsScreen = ({ navigation }) => {
 					style={styles.table_button}
 					// onPress={() => navigation.navigate("Education 1")}
 				>
-					<Text style={styles.table_buttonText}>Daily quotes </Text>
+					<Text style={styles.table_buttonText}>Liked quotes </Text>
 				</TouchableOpacity>
 
 				<TouchableOpacity
 					style={styles.table_button}
-					onPress={() => navigation.navigate("Education 1")}
+					// onPress={() => navigation.navigate("")}
 				>
-					<Text style={styles.table_buttonText}>Top quotes</Text>
+					<Text style={styles.table_buttonText}>Saved quotes</Text>
 				</TouchableOpacity>
 			</View>
 
 			<View style={styles.categories}>
 				<TouchableOpacity
 					style={styles.table_button}
-					// onPress={() => navigation.navigate("Welcome")}
+					onPress={() => navigation.navigate("Education")}
 				>
 					<Text style={styles.table_buttonText}>First Chapter</Text>
 				</TouchableOpacity>

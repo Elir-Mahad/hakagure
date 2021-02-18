@@ -92,8 +92,10 @@ export default StyleSheet.create({
 		height: 70,
 		borderRadius: 100
 	},
+	quotations: {
+		fontSize: 200
+	},
 	edu_bodyText: {
-		backgroundColor: "lightgrey",
 		color: "black",
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 23,
