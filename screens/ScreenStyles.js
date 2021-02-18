@@ -68,23 +68,18 @@ export default StyleSheet.create({
 		borderColor: "black",
 		borderWidth: 2
 	},
-	table_image: {
-		width: 100,
-		height: 100,
-		marginBottom: 15,
-		marginTop: 15,
-		borderRadius: 100
+	categories: {
+		display: "flex",
+		flexDirection: "row"
 	},
 	table_button: {
 		marginBottom: 15,
-		paddingRight: 10,
-		paddingLeft: 10,
-		paddingTop: 5,
-		paddingBottom: 5,
 		borderRadius: 3,
 		backgroundColor: "darkred",
 		alignItems: "center",
-		width: 250
+		height: 110,
+		width: 170,
+		margin: 5
 	},
 	table_buttonText: {
 		fontFamily: "Inconsolata-Regular",
