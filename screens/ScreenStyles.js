@@ -119,8 +119,15 @@ export default StyleSheet.create({
 		height: 400
 	},
 	edu_icons: {
+		backgroundColor: "white",
+		width: "100%",
+		padding: 10,
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "space-evenly"
+		justifyContent: "space-evenly",
+		position: "absolute",
+		bottom: 0,
+		borderBottomRightRadius: 5,
+		borderBottomLeftRadius: 5
 	}
 });
