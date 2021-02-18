@@ -9,9 +9,10 @@ import {
 	ScrollView
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
-//
-import { Image } from "react-native-elements";
-//
+
+// icons
+import { AntDesign } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 //!------------------------------------------------------------IMPORTS
 
@@ -25,6 +26,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						{/* <Text style={styles.quotations}>“</Text> */}
@@ -32,6 +34,12 @@ const EduScreen = ({ navigation }) => {
 						will make it into a hanging scroll.
 						{/* <Text style={styles.quotations}>”</Text> */}
 					</Text>
+					<View style={styles.edu_icons}>
+						<AntDesign name="hearto" size={24} color="black" />
+						<MaterialIcons name="save-alt" size={24} color="black" />
+						<MaterialIcons name="content-copy" size={24} color="black" />
+						<AntDesign name="sharealt" size={24} color="black" />
+					</View>
 				</ImageBackground>
 			</View>
 			{/*  */}
@@ -40,6 +48,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						We learn about the sayings and deeds of the men of old in order to
@@ -53,6 +62,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						A person who knows a little will act arrogant. When someone knows
@@ -66,6 +76,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						Scholars are men who with wit and speech hide their own true
@@ -79,6 +90,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						Calculating people are contemptible. The reason for this is that
@@ -94,6 +106,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						There are times when extensive knowledge becomes a hindrance. One
@@ -108,6 +121,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						Discrimination will never be brought to a conclusion. With an
@@ -124,6 +138,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						A man received an oral teaching concerning the Bravery. He neither
@@ -139,6 +154,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						If one does not strike out by simply closing his eyes and rushing
@@ -152,6 +168,7 @@ const EduScreen = ({ navigation }) => {
 					// the below image wraps the whole view
 					source={require("../screen_assets/japan1.png")}
 					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
 				>
 					<Text style={styles.edu_bodyText}>
 						When the time comes, there is no moment for reasoning. And if you

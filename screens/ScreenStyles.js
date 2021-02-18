@@ -85,11 +85,9 @@ export default StyleSheet.create({
 		flex: 1,
 		alignItems: "center",
 		justifyContent: "center",
-		backgroundColor: "white",
-		margin: 20,
-		borderRadius: 5,
-		borderColor: "grey",
-		borderWidth: 2
+		backgroundColor: "lightgrey",
+		margin: 10,
+		borderRadius: 5
 	},
 	edu_image: {
 		width: 70,
@@ -118,7 +116,11 @@ export default StyleSheet.create({
 		resizeMode: "cover",
 		width: "100%",
 		justifyContent: "center",
-		height: 400,
-		borderRadius: 5
+		height: 400
+	},
+	edu_icons: {
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-evenly"
 	}
 });
