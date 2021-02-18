@@ -15,37 +15,51 @@ const TableOfContentsScreen = ({ navigation }) => {
 		<KeyboardAvoidingView style={styles.table_container}>
 			<StatusBar style="light" />
 
-			<Text style={styles.table_titleText}>Table of Contents</Text>
-
 			<View style={styles.categories}>
 				<TouchableOpacity
 					style={styles.table_button}
 					// onPress={() => navigation.navigate("Education 1")}
 				>
-					<Text style={styles.table_buttonText}> Favourite quotes </Text>
+					<Text style={styles.table_buttonText}>Daily quotes </Text>
 				</TouchableOpacity>
 
 				<TouchableOpacity
 					style={styles.table_button}
 					onPress={() => navigation.navigate("Education 1")}
 				>
-					<Text style={styles.table_buttonText}>First Chapter</Text>
+					<Text style={styles.table_buttonText}>Top quotes</Text>
 				</TouchableOpacity>
 			</View>
 
 			<View style={styles.categories}>
+				<TouchableOpacity
+					style={styles.table_button}
+					// onPress={() => navigation.navigate("Welcome")}
+				>
+					<Text style={styles.table_buttonText}>First Chapter</Text>
+				</TouchableOpacity>
+
 				<TouchableOpacity
 					style={styles.table_button}
 					// onPress={() => navigation.navigate("Welcome")}
 				>
 					<Text style={styles.table_buttonText}>Second Chapter</Text>
 				</TouchableOpacity>
+			</View>
 
+			<View style={styles.categories}>
 				<TouchableOpacity
 					style={styles.table_button}
 					// onPress={() => navigation.navigate("Welcome")}
 				>
 					<Text style={styles.table_buttonText}>Third Chapter</Text>
+				</TouchableOpacity>
+
+				<TouchableOpacity
+					style={styles.table_button}
+					// onPress={() => navigation.navigate("Welcome")}
+				>
+					<Text style={styles.table_buttonText}>Fourth chapter</Text>
 				</TouchableOpacity>
 			</View>
 
@@ -54,14 +68,14 @@ const TableOfContentsScreen = ({ navigation }) => {
 					style={styles.table_button}
 					// onPress={() => navigation.navigate("Welcome")}
 				>
-					<Text style={styles.table_buttonText}>Fourth Chapter</Text>
+					<Text style={styles.table_buttonText}>Fifth Chapter</Text>
 				</TouchableOpacity>
 
 				<TouchableOpacity
 					style={styles.table_button}
 					// onPress={() => navigation.navigate("Welcome")}
 				>
-					<Text style={styles.table_buttonText}>Fifth chapter</Text>
+					<Text style={styles.table_buttonText}>Sixth chapter</Text>
 				</TouchableOpacity>
 			</View>
 		</KeyboardAvoidingView>

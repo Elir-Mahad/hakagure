@@ -54,19 +54,9 @@ export default StyleSheet.create({
 	table_container: {
 		flex: 1,
 		alignItems: "center",
-		justifyContent: "center",
 		padding: 10,
-		backgroundColor: "white"
-	},
-	table_titleText: {
-		fontSize: 25,
-		paddingRight: 10,
-		paddingLeft: 10,
-		paddingTop: 5,
-		paddingBottom: 5,
-		borderRadius: 5,
-		borderColor: "black",
-		borderWidth: 2
+		backgroundColor: "white",
+		justifyContent: "center"
 	},
 	categories: {
 		display: "flex",
@@ -76,19 +66,17 @@ export default StyleSheet.create({
 		marginBottom: 15,
 		borderRadius: 3,
 		backgroundColor: "darkred",
-		alignItems: "center",
-		height: 110,
+		height: 100,
 		width: 170,
-		margin: 5
+		margin: 4
 	},
 	table_buttonText: {
 		fontFamily: "Inconsolata-Regular",
 		color: "white",
 		fontSize: 17,
-		paddingTop: 5,
-		paddingBottom: 5,
-		paddingLeft: 20,
-		paddingRight: 20
+		textAlign: "left",
+		marginLeft: 6,
+		marginTop: 6
 	},
 	//
 	// edu styles
