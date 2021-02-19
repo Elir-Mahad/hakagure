@@ -79,14 +79,14 @@ export default StyleSheet.create({
 		marginTop: 6
 	},
 	//
-	// edu styles
+	// Quotes Container styles
 	//
 	category_screen: {
 		backgroundColor: "lightgrey",
 		paddingTop: 20,
 		paddingBottom: 20
 	},
-	category_container: {
+	quote_container: {
 		flex: 1,
 		alignItems: "center",
 		justifyContent: "center",
@@ -105,12 +105,19 @@ export default StyleSheet.create({
 	textandquotes: {
 		padding: 30
 	},
-	category_bodyText: {
+	shortquote: {
 		color: "white",
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 23,
 		padding: 5,
-		textAlign: "center"
+		textAlign: "left"
+	},
+	longquote: {
+		color: "white",
+		fontFamily: "Inconsolata-Regular",
+		fontSize: 21,
+		padding: 1,
+		textAlign: "left"
 	},
 	backgroundimage: {
 		flex: 1,
