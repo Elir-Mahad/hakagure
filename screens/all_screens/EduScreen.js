@@ -9,10 +9,8 @@ import {
 	ScrollView
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
-
-// icons
-import { AntDesign } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
+//
+import Icons from "../Icons";
 
 //!------------------------------------------------------------IMPORTS
 
@@ -24,7 +22,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -34,19 +32,14 @@ const EduScreen = ({ navigation }) => {
 						will make it into a hanging scroll.
 						{/* <Text style={styles.quotations}>”</Text> */}
 					</Text>
-					<View style={styles.edu_icons}>
-						<AntDesign name="hearto" size={24} color="black" />
-						<MaterialIcons name="save-alt" size={24} color="black" />
-						<MaterialIcons name="content-copy" size={24} color="black" />
-						<AntDesign name="sharealt" size={24} color="black" />
-					</View>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -54,13 +47,14 @@ const EduScreen = ({ navigation }) => {
 						We learn about the sayings and deeds of the men of old in order to
 						entrust ourselves to their wisdom and prevent selfishness.
 					</Text>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -68,13 +62,14 @@ const EduScreen = ({ navigation }) => {
 						A person who knows a little will act arrogant. When someone knows
 						something well, he is gentle.
 					</Text>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -82,13 +77,14 @@ const EduScreen = ({ navigation }) => {
 						Scholars are men who with wit and speech hide their own true
 						cowardice and greed.
 					</Text>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -98,13 +94,14 @@ const EduScreen = ({ navigation }) => {
 						life is considered gain. Thus, death is something that such a person
 						does not care for, and he is contemptible.
 					</Text>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -113,13 +110,14 @@ const EduScreen = ({ navigation }) => {
 						should use discretion. Knowing the circumstances can be an
 						obstruction in everyday affairs, too. One should use discretion.
 					</Text>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -130,13 +128,14 @@ const EduScreen = ({ navigation }) => {
 						determined and having the spirit to break right through to the other
 						side.
 					</Text>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -146,13 +145,14 @@ const EduScreen = ({ navigation }) => {
 						completely. Then, in facing real situations, he acted on impulse and
 						the things that he had learned became wisdom of his own.
 					</Text>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -160,13 +160,14 @@ const EduScreen = ({ navigation }) => {
 						If one does not strike out by simply closing his eyes and rushing
 						into the enemy, even if it is only one step, he will be of no use.
 					</Text>
+					<Icons />
 				</ImageBackground>
 			</View>
 			{/*  */}
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/japan1.png")}
+					source={require("../screen_assets/samuraii.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -174,12 +175,13 @@ const EduScreen = ({ navigation }) => {
 						When the time comes, there is no moment for reasoning. And if you
 						have not done your inquiring beforehand , there is most often shame.
 					</Text>
-					<TouchableOpacity
+					<Icons />
+					{/* <TouchableOpacity
 						//
 						onPress={() => navigation.navigate("Table of Contents")}
 					>
 						<Text style={styles.edu_bodyText}> Table of contents </Text>
-					</TouchableOpacity>
+					</TouchableOpacity> */}
 				</ImageBackground>
 			</View>
 		</ScrollView>

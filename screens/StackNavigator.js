@@ -14,9 +14,9 @@ import EduScreen from "./all_screens/EduScreen";
 
 const globalScreenOptions = {
 	// The constant globalScreenOptions stores the below css styles
-	headerStyle: { backgroundColor: "darkred" },
-	headerTitleStyle: { color: "white" },
-	headerTintiColor: "white"
+	headerStyle: { backgroundColor: "darkgrey" },
+	headerTitleStyle: { color: "black" },
+	headerTintiColor: "red"
 };
 
 const Stack = createStackNavigator();

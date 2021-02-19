@@ -65,7 +65,7 @@ export default StyleSheet.create({
 	table_button: {
 		marginBottom: 15,
 		borderRadius: 3,
-		backgroundColor: "darkred",
+		backgroundColor: "black",
 		height: 100,
 		width: 170,
 		margin: 4
@@ -89,34 +89,23 @@ export default StyleSheet.create({
 		margin: 10,
 		borderRadius: 5
 	},
-	edu_image: {
-		width: 70,
-		height: 70,
-		borderRadius: 100
-	},
 	quotations: {
 		fontSize: 200
 	},
 	edu_bodyText: {
-		color: "black",
+		color: "white",
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 23,
 		padding: 5,
-		marginLeft: 20,
-		marginRight: 20,
-		marginBottom: 20,
-		marginTop: 20,
-		textAlign: "center",
-		borderRadius: 5,
-		borderColor: "black",
-		borderWidth: 2
+		textAlign: "center"
 	},
 	backgroundimage: {
+		backgroundColor: "black",
 		flex: 1,
 		resizeMode: "cover",
 		width: "100%",
-		justifyContent: "center",
-		height: 400
+		height: 450,
+		justifyContent: "center"
 	},
 	edu_icons: {
 		backgroundColor: "white",
