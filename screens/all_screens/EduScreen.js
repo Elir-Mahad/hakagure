@@ -22,7 +22,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -39,7 +39,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -54,7 +54,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -69,7 +69,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -84,7 +84,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -101,7 +101,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -117,7 +117,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -135,7 +135,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -152,7 +152,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -167,7 +167,7 @@ const EduScreen = ({ navigation }) => {
 			<View style={styles.edu_container}>
 				<ImageBackground
 					// the below image wraps the whole view
-					source={require("../screen_assets/samuraii.png")}
+					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
 					imageStyle={{ borderRadius: 5 }}
 				>
@@ -176,12 +176,6 @@ const EduScreen = ({ navigation }) => {
 						have not done your inquiring beforehand , there is most often shame.
 					</Text>
 					<Icons />
-					{/* <TouchableOpacity
-						//
-						onPress={() => navigation.navigate("Table of Contents")}
-					>
-						<Text style={styles.edu_bodyText}> Table of contents </Text>
-					</TouchableOpacity> */}
 				</ImageBackground>
 			</View>
 		</ScrollView>

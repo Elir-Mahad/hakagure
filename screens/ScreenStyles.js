@@ -100,7 +100,6 @@ export default StyleSheet.create({
 		textAlign: "center"
 	},
 	backgroundimage: {
-		backgroundColor: "black",
 		flex: 1,
 		resizeMode: "cover",
 		width: "100%",
