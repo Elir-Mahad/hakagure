@@ -85,12 +85,22 @@ export default StyleSheet.create({
 		flex: 1,
 		alignItems: "center",
 		justifyContent: "center",
-		backgroundColor: "lightgrey",
+		backgroundColor: "white",
 		margin: 10,
 		borderRadius: 5
 	},
-	quotations: {
-		fontSize: 200
+	quotes_left: {
+		alignSelf: "flex-start",
+		marginLeft: 20,
+		marginBottom: 10
+	},
+	quotes_right: {
+		alignSelf: "flex-end",
+		marginRight: 20,
+		marginTop: 10
+	},
+	textandquotes: {
+		padding: 30
 	},
 	edu_bodyText: {
 		color: "white",
@@ -103,7 +113,7 @@ export default StyleSheet.create({
 		flex: 1,
 		resizeMode: "cover",
 		width: "100%",
-		height: 450,
+		height: "100%",
 		justifyContent: "center"
 	},
 	edu_icons: {
@@ -113,8 +123,6 @@ export default StyleSheet.create({
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-evenly",
-		position: "absolute",
-		bottom: 0,
 		borderBottomRightRadius: 5,
 		borderBottomLeftRadius: 5
 	}

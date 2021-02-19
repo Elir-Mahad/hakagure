@@ -5,7 +5,7 @@ import styles from "./ScreenStyles";
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 //
-const Icons = () => {
+const CardBottomIcons = () => {
 	return (
 		<View style={styles.edu_icons}>
 			<AntDesign name="hearto" size={24} color="black" />
@@ -16,4 +16,4 @@ const Icons = () => {
 	);
 };
 
-export default Icons;
+export default CardBottomIcons;
