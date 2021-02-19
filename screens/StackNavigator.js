@@ -9,6 +9,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import WelcomeScreen from "./WelcomeScreen";
 import TableOfContentsScreen from "./TableOfContentsScreen";
 import EduScreen from "./all_screens/EduScreen";
+import CourageScreen from "./all_screens/CourageScreen";
 
 //!--- Declare the global screen options and initialize the createStackNaviagtor
 
@@ -36,6 +37,10 @@ const StackNavigator = () => {
 			<Stack.Screen
 				name="Education" // Give the component a name
 				component={EduScreen} // Import the component
+			/>
+			<Stack.Screen
+				name="Courage" // Give the component a name
+				component={CourageScreen} // Import the component
 			/>
 		</Stack.Navigator>
 	);

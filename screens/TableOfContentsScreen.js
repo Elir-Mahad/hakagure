@@ -36,14 +36,14 @@ const TableOfContentsScreen = ({ navigation }) => {
 					style={styles.table_button}
 					onPress={() => navigation.navigate("Education")}
 				>
-					<Text style={styles.table_buttonText}>First Chapter</Text>
+					<Text style={styles.table_buttonText}>Education</Text>
 				</TouchableOpacity>
 
 				<TouchableOpacity
 					style={styles.table_button}
-					// onPress={() => navigation.navigate("Welcome")}
+					onPress={() => navigation.navigate("Courage")}
 				>
-					<Text style={styles.table_buttonText}>Second Chapter</Text>
+					<Text style={styles.table_buttonText}>Courage</Text>
 				</TouchableOpacity>
 			</View>
 

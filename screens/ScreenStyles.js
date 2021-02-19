@@ -81,12 +81,12 @@ export default StyleSheet.create({
 	//
 	// edu styles
 	//
-	edu_screen: {
+	category_screen: {
 		backgroundColor: "lightgrey",
 		paddingTop: 20,
 		paddingBottom: 20
 	},
-	edu_container: {
+	category_container: {
 		flex: 1,
 		alignItems: "center",
 		justifyContent: "center",
@@ -105,7 +105,7 @@ export default StyleSheet.create({
 	textandquotes: {
 		padding: 30
 	},
-	edu_bodyText: {
+	category_bodyText: {
 		color: "white",
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 23,
@@ -119,7 +119,7 @@ export default StyleSheet.create({
 		height: "100%",
 		justifyContent: "center"
 	},
-	edu_icons: {
+	category_icons: {
 		backgroundColor: "white",
 		width: "100%",
 		padding: 10,

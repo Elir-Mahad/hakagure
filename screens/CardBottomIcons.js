@@ -7,7 +7,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 //
 const CardBottomIcons = () => {
 	return (
-		<View style={styles.edu_icons}>
+		<View style={styles.category_icons}>
 			<AntDesign name="hearto" size={24} color="black" />
 			<MaterialIcons name="save-alt" size={24} color="black" />
 			<MaterialIcons name="content-copy" size={24} color="black" />
