@@ -81,22 +81,25 @@ export default StyleSheet.create({
 	//
 	// edu styles
 	//
+	edu_screen: {
+		backgroundColor: "lightgrey",
+		paddingTop: 20,
+		paddingBottom: 20
+	},
 	edu_container: {
 		flex: 1,
 		alignItems: "center",
 		justifyContent: "center",
 		backgroundColor: "white",
-		margin: 10,
+		margin: 15,
 		borderRadius: 5
 	},
 	quotes_left: {
 		alignSelf: "flex-start",
-		marginLeft: 20,
 		marginBottom: 10
 	},
 	quotes_right: {
 		alignSelf: "flex-end",
-		marginRight: 20,
 		marginTop: 10
 	},
 	textandquotes: {

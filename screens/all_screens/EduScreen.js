@@ -13,7 +13,7 @@ import RightQuote from "../RightQuote";
 const EduScreen = ({ navigation }) => {
 	//
 	return (
-		<ScrollView>
+		<ScrollView style={styles.edu_screen}>
 			<StatusBar style="light" />
 			<View style={styles.edu_container}>
 				<ImageBackground
@@ -215,6 +215,8 @@ const EduScreen = ({ navigation }) => {
 					<CardBottomIcons />
 				</ImageBackground>
 			</View>
+			{/*  */}
+			<Text></Text>
 		</ScrollView>
 	);
 };
