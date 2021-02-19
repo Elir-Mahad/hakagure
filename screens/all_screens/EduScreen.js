@@ -102,9 +102,12 @@ const EduScreen = ({ navigation }) => {
 						<LeftQuote />
 						<Text style={styles.edu_bodyText}>
 							Calculating people are contemptible. The reason for this is that
-							calculation deals with loss and gain. Death is considered loss and
-							life is considered gain. Thus, death is something that such a
-							person does not care for, and he is contemptible.
+							calculation deals with loss and gain.{" "}
+						</Text>
+						<Text style={styles.edu_bodyText}>
+							Death is considered loss and life is considered gain. Thus, death
+							is something that such a person does not care for, and he is
+							contemptible.
 						</Text>
 						<RightQuote />
 					</View>
@@ -122,9 +125,9 @@ const EduScreen = ({ navigation }) => {
 					<View style={styles.textandquotes}>
 						<LeftQuote />
 						<Text style={styles.edu_bodyText}>
-							There are times when extensive knowledge becomes a hindrance. One
-							should use discretion. Knowing the circumstances can be an
-							obstruction in everyday affairs, too. One should use discretion.
+							There are times when extensive knowledge becomes a hindrance.
+							Knowing the circumstances can be an obstruction in everyday
+							affairs.
 						</Text>
 						<RightQuote />
 					</View>
@@ -168,8 +171,12 @@ const EduScreen = ({ navigation }) => {
 						<Text style={styles.edu_bodyText}>
 							A man received an oral teaching concerning the Bravery. He neither
 							wrote it down nor committed it to memory but rather forgot it
-							completely. Then, in facing real situations, he acted on impulse
-							and the things that he had learned became wisdom of his own.
+							completely.
+						</Text>
+						<Text style={styles.edu_bodyText}>
+							{" "}
+							Then, in facing real situations, he acted on impulse and the
+							things that he had learned became wisdom of his own.
 						</Text>
 						<RightQuote />
 					</View>
