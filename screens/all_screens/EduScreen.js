@@ -174,7 +174,6 @@ const EduScreen = ({ navigation }) => {
 							completely.
 						</Text>
 						<Text style={styles.longquote}>
-							{" "}
 							Then, in facing real situations, he acted on impulse and the
 							things that he had learned became wisdom of his own.
 						</Text>
