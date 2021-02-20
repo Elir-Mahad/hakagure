@@ -50,16 +50,16 @@ const TableOfContentsScreen = ({ navigation }) => {
 			<View style={styles.categories}>
 				<TouchableOpacity
 					style={styles.table_button}
-					// onPress={() => navigation.navigate("Welcome")}
+					onPress={() => navigation.navigate("Death")}
 				>
-					<Text style={styles.table_buttonText}>Third Chapter</Text>
+					<Text style={styles.table_buttonText}>Death</Text>
 				</TouchableOpacity>
 
 				<TouchableOpacity
 					style={styles.table_button}
-					// onPress={() => navigation.navigate("Welcome")}
+					onPress={() => navigation.navigate("Character")}
 				>
-					<Text style={styles.table_buttonText}>Fourth chapter</Text>
+					<Text style={styles.table_buttonText}>Character</Text>
 				</TouchableOpacity>
 			</View>
 
