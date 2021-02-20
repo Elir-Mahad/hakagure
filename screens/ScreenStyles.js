@@ -66,7 +66,7 @@ export default StyleSheet.create({
 	personalcategory: {
 		marginBottom: 15,
 		borderRadius: 3,
-		borderWidth: 2,
+		borderWidth: 1,
 		width: 170,
 		margin: 4,
 		padding: 4,
@@ -90,7 +90,7 @@ export default StyleSheet.create({
 	table_category: {
 		marginBottom: 15,
 		borderRadius: 3,
-		borderWidth: 2,
+		borderWidth: 1,
 		height: 100,
 		width: 170,
 		margin: 4,
