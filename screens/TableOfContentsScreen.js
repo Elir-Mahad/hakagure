@@ -15,19 +15,27 @@ const TableOfContentsScreen = ({ navigation }) => {
 		<KeyboardAvoidingView style={styles.table_container}>
 			<StatusBar style="light" />
 
-			<View style={styles.categories}>
+			<View style={styles.preferences}>
 				<TouchableOpacity
-					style={styles.table_category}
+					style={styles.personalcategory}
 					// onPress={() => navigation.navigate("Education 1")}
 				>
-					<Text style={styles.table_categoryname}>Liked quotes </Text>
+					<Image
+						//
+						style={styles.bestquotesimage}
+						source={require("./screen_assets/likeimage.png")}
+					/>
 				</TouchableOpacity>
 
 				<TouchableOpacity
-					style={styles.table_category}
+					style={styles.personalcategory}
 					// onPress={() => navigation.navigate("")}
 				>
-					<Text style={styles.table_categoryname}>Saved quotes</Text>
+					<Image
+						//
+						style={styles.worstquotesimage}
+						source={require("./screen_assets/dislikeimage.png")}
+					/>
 				</TouchableOpacity>
 			</View>
 

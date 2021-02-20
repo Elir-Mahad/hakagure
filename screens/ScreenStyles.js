@@ -58,30 +58,56 @@ export default StyleSheet.create({
 		backgroundColor: "white",
 		justifyContent: "center"
 	},
+	//
+	preferences: {
+		display: "flex",
+		flexDirection: "row"
+	},
+	personalcategory: {
+		marginBottom: 15,
+		borderRadius: 3,
+		borderWidth: 2,
+		width: 170,
+		margin: 4,
+		padding: 4,
+		display: "flex",
+		justifyContent: "center",
+		flexDirection: "row"
+	},
+	bestquotesimage: {
+		width: 55,
+		height: 55
+	},
+	worstquotesimage: {
+		width: 55,
+		height: 55
+	},
+	//
 	categories: {
 		display: "flex",
 		flexDirection: "row"
 	},
-	table_titleandcount: {
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "space-between"
-	},
 	table_category: {
 		marginBottom: 15,
 		borderRadius: 3,
-		// backgroundColor: "black",
 		borderWidth: 2,
 		height: 100,
 		width: 170,
 		margin: 4,
 		paddingLeft: 6,
 		paddingRight: 6,
-		paddingTop: 6
+		paddingTop: 2,
+		paddingBottom: 6,
+		display: "flex",
+		justifyContent: "space-between"
+	},
+	table_titleandcount: {
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-between"
 	},
 	table_categoryname: {
 		fontFamily: "Inconsolata-Regular",
-		// color: "white",
 		color: "black",
 		fontSize: 17,
 		textAlign: "left"
@@ -89,11 +115,8 @@ export default StyleSheet.create({
 	table_categorycount: {
 		fontSize: 17,
 		color: "black"
-		// color: "white"
 	},
 	table_categoryimage: {
-		// backgroundColor: "white",
-		padding: 2,
 		width: 30,
 		height: 30
 	},
