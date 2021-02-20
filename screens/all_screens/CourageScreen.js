@@ -270,6 +270,51 @@ const CourageScreen = ({ navigation }) => {
 				</ImageBackground>
 				<CardBottomIcons />
 			</View>
+			<View style={styles.quote_container}>
+				<ImageBackground
+					source={require("../screen_assets/black.png")}
+					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
+				>
+					<View style={styles.textandquotes}>
+						<LeftQuote />
+						<Text style={styles.longquote}>The meaning of resolve:</Text>
+						<Text style={styles.longquote}>
+							There is something to be learned from a rainstorm. When meeting
+							with a sudden shower, you try not to get wet and run quickly along
+							the road.
+						</Text>
+						<Text style={styles.longquote}>
+							But doing such things as passing under the eaves of houses, you
+							still get wet.
+						</Text>
+						<Text style={styles.longquote}>
+							When you are resolved from the beginning, you will not be
+							perplexed, though you still get the same soaking. This
+							understanding extends to everything.
+						</Text>
+						<RightQuote />
+					</View>
+				</ImageBackground>
+				<CardBottomIcons />
+			</View>
+			<View style={styles.quote_container}>
+				<ImageBackground
+					source={require("../screen_assets/black.png")}
+					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
+				>
+					<View style={styles.textandquotes}>
+						<LeftQuote />
+						<Text style={styles.shortquote}>
+							In just refusing to retreat from something one gains the strength
+							of two men.
+						</Text>
+						<RightQuote />
+					</View>
+				</ImageBackground>
+				<CardBottomIcons />
+			</View>
 			{/*  */}
 			<Text></Text>
 		</ScrollView>
