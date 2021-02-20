@@ -19,7 +19,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -47,7 +46,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -65,7 +63,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -83,7 +80,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -100,7 +96,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -118,7 +113,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -140,7 +134,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -157,7 +150,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -179,7 +171,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -205,7 +196,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -222,7 +212,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -247,7 +236,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -264,7 +252,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -285,7 +272,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -310,7 +296,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -327,7 +312,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -344,7 +328,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />
@@ -368,7 +351,6 @@ const DeathScreen = ({ navigation }) => {
 				<ImageBackground
 					source={require("../screen_assets/black.png")}
 					style={styles.backgroundimage}
-					imageStyle={{ borderRadius: 5 }}
 				>
 					<View style={styles.textandquotes}>
 						<LeftQuote />

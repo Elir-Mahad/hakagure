@@ -91,8 +91,7 @@ export default StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "center",
 		backgroundColor: "white",
-		margin: 15,
-		borderRadius: 5
+		margin: 15
 	},
 	quotes_left: {
 		alignSelf: "flex-start",
@@ -124,7 +123,9 @@ export default StyleSheet.create({
 		resizeMode: "cover",
 		width: "100%",
 		height: "100%",
-		justifyContent: "center"
+		justifyContent: "center",
+		borderTopRightRadius: 5,
+		borderTopLeftRadius: 5
 	},
 	category_icons: {
 		backgroundColor: "white",
@@ -132,8 +133,6 @@ export default StyleSheet.create({
 		padding: 10,
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "space-evenly",
-		borderBottomRightRadius: 5,
-		borderBottomLeftRadius: 5
+		justifyContent: "space-evenly"
 	}
 });
