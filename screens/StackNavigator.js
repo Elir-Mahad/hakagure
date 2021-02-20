@@ -13,6 +13,7 @@ import CourageScreen from "./all_screens/CourageScreen";
 import DeathScreen from "./all_screens/DeathScreen";
 import CharacterScreen from "./all_screens/CharacterScreen";
 import SpeechScreen from "./all_screens/SpeechScreen";
+import TimeScreen from "./all_screens/TimeScreen";
 
 //!--- Declare the global screen options and initialize the createStackNaviagtor
 
@@ -56,6 +57,10 @@ const StackNavigator = () => {
 			<Stack.Screen
 				name="Speech" // Give the component a name
 				component={SpeechScreen} // Import the component
+			/>
+			<Stack.Screen
+				name="Time" // Give the component a name
+				component={TimeScreen} // Import the component
 			/>
 		</Stack.Navigator>
 	);

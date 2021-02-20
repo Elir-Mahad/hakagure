@@ -73,9 +73,9 @@ const TableOfContentsScreen = ({ navigation }) => {
 
 				<TouchableOpacity
 					style={styles.table_button}
-					// onPress={() => navigation.navigate("Welcome")}
+					onPress={() => navigation.navigate("Time")}
 				>
-					<Text style={styles.table_buttonText}>Sixth chapter</Text>
+					<Text style={styles.table_buttonText}>Time</Text>
 				</TouchableOpacity>
 			</View>
 		</KeyboardAvoidingView>
