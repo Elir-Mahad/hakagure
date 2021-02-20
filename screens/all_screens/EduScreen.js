@@ -221,6 +221,24 @@ const EduScreen = ({ navigation }) => {
 					<CardBottomIcons />
 				</ImageBackground>
 			</View>
+			<View style={styles.quote_container}>
+				<ImageBackground
+					// the below image wraps the whole view
+					source={require("../screen_assets/black.png")}
+					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
+				>
+					<View style={styles.textandquotes}>
+						<LeftQuote />
+						<Text style={styles.shortquote}>
+							The resourcefulness of times of peace is the military preparation
+							for times of war.
+						</Text>
+						<RightQuote />
+					</View>
+				</ImageBackground>
+				<CardBottomIcons />
+			</View>
 			{/*  */}
 			<Text></Text>
 		</ScrollView>
