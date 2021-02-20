@@ -353,6 +353,121 @@ const DeathScreen = ({ navigation }) => {
 				</ImageBackground>
 				<CardBottomIcons />
 			</View>
+			<View style={styles.quote_container}>
+				<ImageBackground
+					source={require("../screen_assets/black.png")}
+					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
+				>
+					<View style={styles.textandquotes}>
+						<LeftQuote />
+						<Text style={styles.longquote}>
+							There are four kinds of retainers. They are the “quick, then
+							lapping,” the “lagging, then quick,” the “continually quick,” and
+							the ”continually lag- ging.”
+						</Text>
+						<Text style={styles.longquote}>
+							The “continually quick” are men who when given orders will
+							undertake their execution quickly and settle the matter well.
+							Fukuchi Kichizaemon and the like resemble this type.
+						</Text>
+						<Text style={styles.longquote}>
+							The “lagging, then quick” are men who, though lacking in
+							understanding when given orders, prepare quickly and bring the
+							matter to a conclusion. I suppose that Nakano Kazuma and men
+							similar are like this.
+						</Text>
+						<Text style={styles.longquote}>
+							The “quick, then lagging” are men who when given orders seem to be
+							going to settle things but in their preparation take time and
+							procrastinate. There are many people like this.
+						</Text>
+						<Text style={styles.longquote}>
+							Other than these, one could say that the rest are ”continually
+							lagging.”
+						</Text>
+						<RightQuote />
+					</View>
+				</ImageBackground>
+				<CardBottomIcons />
+			</View>
+			<View style={styles.quote_container}>
+				<ImageBackground
+					source={require("../screen_assets/black.png")}
+					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
+				>
+					<View style={styles.textandquotes}>
+						<LeftQuote />
+						<Text style={styles.shortquote}>
+							The basic meaning of etiquette is to be quick at both the
+							beginning and end and tranquil in the middle. That’s just like
+							being a kaishaku.
+						</Text>
+						<RightQuote />
+					</View>
+				</ImageBackground>
+				<CardBottomIcons />
+			</View>
+			<View style={styles.quote_container}>
+				<ImageBackground
+					source={require("../screen_assets/black.png")}
+					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
+				>
+					<View style={styles.textandquotes}>
+						<LeftQuote />
+						<Text style={styles.shortquote}>
+							One should always hang wind-bells in order to know the direction
+							of the wind.
+						</Text>
+						<RightQuote />
+					</View>
+				</ImageBackground>
+				<CardBottomIcons />
+			</View>
+			<View style={styles.quote_container}>
+				<ImageBackground
+					source={require("../screen_assets/black.png")}
+					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
+				>
+					<View style={styles.textandquotes}>
+						<LeftQuote />
+						<Text style={styles.shortquote}>
+							There are few people who will make mistakes with fire after having
+							once been burned.
+						</Text>
+						<Text style={styles.shortquote}>
+							Of people who regard water lightly, many have been drowned.
+						</Text>
+						<RightQuote />
+					</View>
+				</ImageBackground>
+				<CardBottomIcons />
+			</View>
+			<View style={styles.quote_container}>
+				<ImageBackground
+					source={require("../screen_assets/black.png")}
+					style={styles.backgroundimage}
+					imageStyle={{ borderRadius: 5 }}
+				>
+					<View style={styles.textandquotes}>
+						<LeftQuote />
+						<Text style={styles.longquote}>The meaning of Filial piety:</Text>
+						<Text style={styles.longquote}>
+							An ancestor’s good or evil can be determined by the conduct of his
+							descendants .
+						</Text>
+						<Text style={styles.longquote}>
+							A descendant should act in a way that will manifest the good in
+							his ancestor and not the bad. This is filial piety.
+						</Text>
+						<RightQuote />
+					</View>
+				</ImageBackground>
+				<CardBottomIcons />
+			</View>
 
 			{/*  */}
 			<Text></Text>
