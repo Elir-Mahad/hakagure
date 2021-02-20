@@ -17,65 +17,125 @@ const TableOfContentsScreen = ({ navigation }) => {
 
 			<View style={styles.categories}>
 				<TouchableOpacity
-					style={styles.table_button}
+					style={styles.table_category}
 					// onPress={() => navigation.navigate("Education 1")}
 				>
-					<Text style={styles.table_buttonText}>Liked quotes </Text>
+					<Text style={styles.table_categoryname}>Liked quotes </Text>
 				</TouchableOpacity>
 
 				<TouchableOpacity
-					style={styles.table_button}
+					style={styles.table_category}
 					// onPress={() => navigation.navigate("")}
 				>
-					<Text style={styles.table_buttonText}>Saved quotes</Text>
+					<Text style={styles.table_categoryname}>Saved quotes</Text>
 				</TouchableOpacity>
 			</View>
 
 			<View style={styles.categories}>
 				<TouchableOpacity
-					style={styles.table_button}
+					style={styles.table_category}
 					onPress={() => navigation.navigate("Education")}
 				>
-					<Text style={styles.table_buttonText}>Education</Text>
+					<View style={styles.table_titleandcount}>
+						<Text style={styles.table_categoryname}>Education</Text>
+						<Text style={styles.table_categorycount}>11</Text>
+					</View>
+
+					<Image
+						//
+						style={styles.table_categoryimage}
+						source={require("./screen_assets/education.png")}
+					/>
+
+					{/* 11 quotes */}
 				</TouchableOpacity>
 
 				<TouchableOpacity
-					style={styles.table_button}
+					style={styles.table_category}
 					onPress={() => navigation.navigate("Courage")}
 				>
-					<Text style={styles.table_buttonText}>Courage</Text>
+					<View style={styles.table_titleandcount}>
+						<Text style={styles.table_categoryname}>Courage</Text>
+						<Text style={styles.table_categorycount}>12</Text>
+					</View>
+
+					<Image
+						//
+						style={styles.table_categoryimage}
+						source={require("./screen_assets/courage.png")}
+					/>
 				</TouchableOpacity>
 			</View>
 
 			<View style={styles.categories}>
 				<TouchableOpacity
-					style={styles.table_button}
+					style={styles.table_category}
 					onPress={() => navigation.navigate("Death")}
 				>
-					<Text style={styles.table_buttonText}>Death</Text>
+					<View style={styles.table_titleandcount}>
+						<Text style={styles.table_categoryname}>Death</Text>
+						<Text style={styles.table_categorycount}>18</Text>
+					</View>
+
+					<Image
+						//
+						style={styles.table_categoryimage}
+						source={require("./screen_assets/death.png")}
+					/>
+					{/* 18 quotes */}
 				</TouchableOpacity>
 
 				<TouchableOpacity
-					style={styles.table_button}
+					style={styles.table_category}
 					onPress={() => navigation.navigate("Character")}
 				>
-					<Text style={styles.table_buttonText}>Character</Text>
+					<View style={styles.table_titleandcount}>
+						<Text style={styles.table_categoryname}>Character</Text>
+						<Text style={styles.table_categorycount}>21</Text>
+					</View>
+
+					<Image
+						//
+						style={styles.table_categoryimage}
+						source={require("./screen_assets/character.png")}
+					/>
+					{/* 21 quotes */}
 				</TouchableOpacity>
 			</View>
 
 			<View style={styles.categories}>
 				<TouchableOpacity
-					style={styles.table_button}
+					style={styles.table_category}
 					onPress={() => navigation.navigate("Speech")}
 				>
-					<Text style={styles.table_buttonText}>Speech</Text>
+					<View style={styles.table_titleandcount}>
+						<Text style={styles.table_categoryname}>Speech</Text>
+						<Text style={styles.table_categorycount}>6</Text>
+					</View>
+
+					<Image
+						//
+						style={styles.table_categoryimage}
+						source={require("./screen_assets/speech.png")}
+					/>
+					{/* 6 quotes */}
 				</TouchableOpacity>
 
 				<TouchableOpacity
-					style={styles.table_button}
+					style={styles.table_category}
 					onPress={() => navigation.navigate("Time")}
 				>
-					<Text style={styles.table_buttonText}>Time</Text>
+					<View style={styles.table_titleandcount}>
+						<Text style={styles.table_categoryname}>Time</Text>
+						<Text style={styles.table_categorycount}>5</Text>
+					</View>
+
+					<Image
+						//
+						style={styles.table_categoryimage}
+						source={require("./screen_assets/time.png")}
+					/>
+					{/* 5 quotes */}
 				</TouchableOpacity>
 			</View>
 		</KeyboardAvoidingView>

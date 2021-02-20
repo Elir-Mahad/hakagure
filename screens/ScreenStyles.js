@@ -62,21 +62,40 @@ export default StyleSheet.create({
 		display: "flex",
 		flexDirection: "row"
 	},
-	table_button: {
+	table_titleandcount: {
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-between"
+	},
+	table_category: {
 		marginBottom: 15,
 		borderRadius: 3,
-		backgroundColor: "black",
+		// backgroundColor: "black",
+		borderWidth: 2,
 		height: 100,
 		width: 170,
-		margin: 4
+		margin: 4,
+		paddingLeft: 6,
+		paddingRight: 6,
+		paddingTop: 6
 	},
-	table_buttonText: {
+	table_categoryname: {
 		fontFamily: "Inconsolata-Regular",
-		color: "white",
+		// color: "white",
+		color: "black",
 		fontSize: 17,
-		textAlign: "left",
-		marginLeft: 6,
-		marginTop: 6
+		textAlign: "left"
+	},
+	table_categorycount: {
+		fontSize: 17,
+		color: "black"
+		// color: "white"
+	},
+	table_categoryimage: {
+		// backgroundColor: "white",
+		padding: 2,
+		width: 30,
+		height: 30
 	},
 	//
 	// Quotes Container styles
