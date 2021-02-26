@@ -2,33 +2,83 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
 	//
-	// Styles for welcome screen
+	// Styles for WelcomeOneScreen
 	//
 	welcome_container: {
 		flex: 1,
 		alignItems: "center",
-		justifyContent: "center",
+		justifyContent: "center"
+	},
+	japandengtitles: {
+		width: "100%",
 		padding: 10,
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-between"
+	},
+	TextEng: {
+		display: "flex",
+		flexDirection: "row"
+	},
+	LettersEngOne: {
+		// height: "100%",
+		backgroundColor: "darkred",
+		borderLeftWidth: 3,
+		borderTopWidth: 3,
+		borderBottomWidth: 3,
+		borderTopLeftRadius: 10,
+		borderBottomLeftRadius: 10
+	},
+	LettersEngTwo: {
+		// height: "100%",
+		backgroundColor: "darkgrey",
+		borderRightWidth: 3,
+		borderTopWidth: 3,
+		borderBottomWidth: 3,
+		borderTopRightRadius: 10,
+		borderBottomRightRadius: 10
+	},
+	WrittenBy: {
+		backgroundColor: "black",
+		padding: 5
+	},
+	EngLetter: {
+		fontSize: 25,
+		textAlign: "center",
+		color: "white"
+	},
+	LettersJp: {
+		borderWidth: 3,
+		backgroundColor: "darkred",
+		borderRadius: 10
+	},
+	JpLetter: {
+		fontSize: 35,
+		textAlign: "center",
+		color: "white"
+	},
+	next_button: {
+		alignItems: "center",
+		width: 100,
+		height: 50,
+		borderRadius: 10,
+		alignSelf: "center",
+		justifyContent: "center",
 		backgroundColor: "white"
 	},
-	wrap_image: {
-		alignItems: "center"
+	right_arrow: {
+		width: 30,
+		height: 30
 	},
-	welcome_image: {
-		width: 150,
-		height: 150,
-		borderRadius: 100
+	WelcomeBackgroundImage: {
+		flex: 1,
+		resizeMode: "cover",
+		width: "100%",
+		justifyContent: "center",
+		borderTopRightRadius: 5,
+		borderTopLeftRadius: 5
 	},
-	welcome_titleText: {
-		fontSize: 30,
-		paddingTop: 5,
-		paddingBottom: 5
-	},
-	welcome_subtitleText: {
-		fontSize: 20,
-		paddingTop: 5,
-		paddingBottom: 5
-	},
+	// WelcomeScreenTwo
 	welcome_bodyText: {
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 20,
@@ -40,13 +90,6 @@ export default StyleSheet.create({
 		borderRadius: 5,
 		borderColor: "black",
 		borderWidth: 2
-	},
-	edu_button: {
-		alignItems: "center"
-	},
-	right_arrow: {
-		width: 30,
-		height: 30
 	},
 	//
 	// styles for table of contents

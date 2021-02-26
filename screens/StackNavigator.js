@@ -6,7 +6,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 // below are the different screen components
-import WelcomeScreen from "./WelcomeScreen";
+import WelcomeScreenOne from "./WelcomeScreenOne";
+import WelcomeScreenTwo from "./WelcomeScreenTwo";
 import TableOfContentsScreen from "./TableOfContentsScreen";
 import EduScreen from "./all_screens/EduScreen";
 import CourageScreen from "./all_screens/CourageScreen";
@@ -32,7 +33,11 @@ const StackNavigator = () => {
 		<Stack.Navigator screenOptions={globalScreenOptions}>
 			<Stack.Screen
 				name="Welcome" // Give the component a name
-				component={WelcomeScreen} // Import the component
+				component={WelcomeScreenOne} // Import the component
+			/>
+			<Stack.Screen
+				name="Description" // Give the component a name
+				component={WelcomeScreenTwo} // Import the component
 			/>
 			<Stack.Screen
 				name="Table of Contents" // Give the component a name

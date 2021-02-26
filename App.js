@@ -6,11 +6,8 @@ import React, { useState } from "react";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 
-// below are the imports from react native elements
-// import { Header } from "react-native-elements";
-
 // below are the different screen components
-import WelcomeScreen from "./screens/WelcomeScreen";
+import WelcomeScreenOne from "./screens/WelcomeScreenOne";
 // import DrawerNavigator from "./screens/DrawerNavigator";
 import StackNavigator from "./screens/StackNavigator";
 
@@ -38,7 +35,7 @@ export default function App() {
 
 	if (fontsLoaded) {
 		// if the fonts are loaded
-		<WelcomeScreen />;
+		<WelcomeScreenOne />;
 		// then return the welcome screen
 	} else {
 		// othewrise
