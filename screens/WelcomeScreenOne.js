@@ -6,7 +6,7 @@ import { TouchableOpacity, Text, View, ImageBackground } from "react-native";
 import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 //
-import { Image } from "react-native-elements";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 //!------------------------------------------------------------IMPORTS
 
@@ -56,9 +56,11 @@ const WelcomeScreenOne = ({ navigation }) => {
 					style={styles.next_button}
 					onPress={() => navigation.navigate("Description")}
 				>
-					<Image
-						style={styles.right_arrow}
-						source={require("../screens/screen_assets/right-arrow.png")}
+					<MaterialCommunityIcons
+						//
+						name="chevron-right-circle-outline"
+						size={54}
+						color="white"
 					/>
 				</TouchableOpacity>
 				{/*  */}

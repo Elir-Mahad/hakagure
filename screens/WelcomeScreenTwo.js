@@ -6,6 +6,7 @@ import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 //
 import { Image } from "react-native-elements";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 //!------------------------------------------------------------IMPORTS
 
 const WelcomeScreenTwo = ({ navigation }) => {
@@ -26,18 +27,20 @@ const WelcomeScreenTwo = ({ navigation }) => {
 				sanctioned samurai fighting.
 			</Text>
 			<Text style={styles.DescriptionTextTwo}>
-				Tthe book grapples with the dilemma of maintaining a warrior class in
-				the absence of war and reflects the author's nostalgia for a world that
-				had disappeared before he was born.
+				The book grapples with the dilemma of maintaining a warrior class in the
+				absence of war and reflects the author's nostalgia for a world that had
+				disappeared before he was born.
 			</Text>
 			<TouchableOpacity
 				//
 				style={styles.next_button}
 				onPress={() => navigation.navigate("Table of Contents")}
 			>
-				<Image
-					style={styles.right_arrow}
-					source={require("../screens/screen_assets/right-arrow.png")}
+				<MaterialCommunityIcons
+					//
+					name="chevron-right-circle-outline"
+					size={54}
+					color="white"
 				/>
 			</TouchableOpacity>
 			{/*  */}

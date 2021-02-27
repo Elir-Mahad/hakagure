@@ -22,7 +22,7 @@ const globalScreenOptions = {
 	// The constant globalScreenOptions stores the below css styles
 	headerStyle: { backgroundColor: "#222831" },
 	headerTitleStyle: { color: "white" },
-	headerTintiColor: "red"
+	headerTintiColor: "white"
 };
 
 const Stack = createStackNavigator();

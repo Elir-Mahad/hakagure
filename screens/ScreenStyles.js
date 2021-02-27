@@ -45,12 +45,8 @@ export default StyleSheet.create({
 	},
 	next_button: {
 		alignItems: "center",
-		width: 80,
-		height: 30,
-		borderRadius: 10,
 		alignSelf: "center",
-		justifyContent: "center",
-		backgroundColor: "white"
+		justifyContent: "center"
 	},
 	right_arrow: {
 		width: 30,
