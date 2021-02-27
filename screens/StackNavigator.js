@@ -20,8 +20,8 @@ import TimeScreen from "./all_screens/TimeScreen";
 
 const globalScreenOptions = {
 	// The constant globalScreenOptions stores the below css styles
-	headerStyle: { backgroundColor: "darkgrey" },
-	headerTitleStyle: { color: "black" },
+	headerStyle: { backgroundColor: "#222831" },
+	headerTitleStyle: { color: "white" },
 	headerTintiColor: "red"
 };
 

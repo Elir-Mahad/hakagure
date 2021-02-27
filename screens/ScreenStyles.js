@@ -20,36 +20,22 @@ export default StyleSheet.create({
 		display: "flex",
 		flexDirection: "row"
 	},
-	LettersEngOne: {
-		// height: "100%",
-		backgroundColor: "darkred",
-		borderLeftWidth: 3,
-		borderTopWidth: 3,
-		borderBottomWidth: 3,
-		borderTopLeftRadius: 10,
-		borderBottomLeftRadius: 10
-	},
-	LettersEngTwo: {
-		// height: "100%",
-		backgroundColor: "darkgrey",
-		borderRightWidth: 3,
-		borderTopWidth: 3,
-		borderBottomWidth: 3,
-		borderTopRightRadius: 10,
-		borderBottomRightRadius: 10
-	},
-	WrittenBy: {
+	LettersEng: {
 		backgroundColor: "black",
-		padding: 5
+		borderWidth: 3,
+		borderColor: "#222831",
+		borderRadius: 10
 	},
 	EngLetter: {
-		fontSize: 25,
+		fontSize: 35,
 		textAlign: "center",
 		color: "white"
 	},
 	LettersJp: {
 		borderWidth: 3,
-		backgroundColor: "darkred",
+
+		borderColor: "#222831",
+		backgroundColor: "black",
 		borderRadius: 10
 	},
 	JpLetter: {
@@ -59,8 +45,8 @@ export default StyleSheet.create({
 	},
 	next_button: {
 		alignItems: "center",
-		width: 100,
-		height: 50,
+		width: 80,
+		height: 30,
 		borderRadius: 10,
 		alignSelf: "center",
 		justifyContent: "center",
@@ -79,17 +65,38 @@ export default StyleSheet.create({
 		borderTopLeftRadius: 5
 	},
 	// WelcomeScreenTwo
-	welcome_bodyText: {
+	DescriptionContainer: {
+		flex: 1,
+		alignItems: "center",
+		justifyContent: "center",
+		backgroundColor: "black"
+	},
+	DescriptionImage: {
+		width: 350,
+		height: 250,
+		marginTop: 20,
+		marginBottom: 10,
+		borderRadius: 10
+	},
+	DescriptionTextOne: {
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 20,
 		padding: 5,
-		marginLeft: 20,
 		marginRight: 20,
-		marginBottom: 20,
-		textAlign: "center",
+		marginLeft: 5,
+		textAlign: "left",
 		borderRadius: 5,
-		borderColor: "black",
-		borderWidth: 2
+		color: "white"
+	},
+	DescriptionTextTwo: {
+		fontFamily: "Inconsolata-Regular",
+		fontSize: 20,
+		padding: 5,
+		marginRight: 20,
+		marginLeft: 5,
+		textAlign: "right",
+		borderRadius: 5,
+		color: "white"
 	},
 	//
 	// styles for table of contents
