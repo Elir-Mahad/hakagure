@@ -1,15 +1,15 @@
 import React from "react";
 import { Text, View, ImageBackground } from "react-native";
-import styles from "../ScreenStyles";
+import styles from "./ScreenStyles";
 //
-import LeftQuote from "../LeftQuote";
-import RightQuote from "../RightQuote";
+import LeftQuote from "./LeftQuote";
+import RightQuote from "./RightQuote";
 //
 import { FontAwesome } from "@expo/vector-icons";
 //
-import { useStateValue } from "../StateProvider";
+import { useStateValue } from "./StateProvider";
 
-function LikedQuotesContainer({ id, quoteText }) {
+function LikedQuotesContainer({ id, title, quoteText }) {
 	//
 	const [{}, dispatch] = useStateValue();
 	// THIS IS THE DATA LAYER FROM STATE PROVIDER
@@ -31,13 +31,14 @@ function LikedQuotesContainer({ id, quoteText }) {
 		<View style={styles.quote_container}>
 			<ImageBackground
 				// the below image wraps the whole view
-				source={require("../screen_assets/black.png")}
+				source={require("./screen_assets/black.png")}
 				style={styles.backgroundimage}
 				imageStyle={{ borderRadius: 5 }}
 			>
 				<View style={styles.textandquotes}>
+					<Text style={styles.quotetitle}> {title}</Text>
 					<LeftQuote />
-					<Text style={styles.longquote}>{quoteText}</Text>
+					<Text style={styles.thequote}>{quoteText}</Text>
 					<RightQuote />
 				</View>
 			</ImageBackground>

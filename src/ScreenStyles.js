@@ -171,8 +171,7 @@ export default StyleSheet.create({
 	//
 	category_screen: {
 		backgroundColor: "lightgrey",
-		paddingTop: 20,
-		paddingBottom: 20
+		paddingTop: 20
 	},
 	itemcount: {
 		position: "absolute",
@@ -186,13 +185,21 @@ export default StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "center"
 	},
+	backgroundimage: {
+		flex: 1,
+		resizeMode: "cover",
+		width: "100%",
+		height: "100%",
+		justifyContent: "center",
+		borderTopRightRadius: 5,
+		borderTopLeftRadius: 5
+	},
 	quote_container: {
 		flex: 1,
 		alignItems: "center",
 		justifyContent: "center",
 		backgroundColor: "white",
 		margin: 15
-		// height: 900
 	},
 	quotetitle: {
 		color: "white",
@@ -210,28 +217,12 @@ export default StyleSheet.create({
 	textandquotes: {
 		padding: 30
 	},
-	shortquote: {
+	thequote: {
 		color: "white",
 		fontFamily: "Inconsolata-Regular",
 		fontSize: 23,
 		padding: 5,
 		textAlign: "left"
-	},
-	longquote: {
-		color: "white",
-		fontFamily: "Inconsolata-Regular",
-		fontSize: 21,
-		padding: 1,
-		textAlign: "left"
-	},
-	backgroundimage: {
-		flex: 1,
-		resizeMode: "cover",
-		width: "100%",
-		height: "100%",
-		justifyContent: "center",
-		borderTopRightRadius: 5,
-		borderTopLeftRadius: 5
 	},
 	category_icons: {
 		backgroundColor: "white",

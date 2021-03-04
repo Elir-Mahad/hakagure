@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 //
 import { useStateValue } from "../StateProvider";
 //
-import LikedQuotesContainer from "./LikedQuotesContainer";
+import LikedQuotesContainer from "../LikedQuotesContainer";
 //!------------------------------------------------------------IMPORTS
 
 const LikedQuotesScreen = ({ navigation }) => {
@@ -41,7 +41,9 @@ const LikedQuotesScreen = ({ navigation }) => {
 						{basket.map((item) => (
 							<LikedQuotesContainer
 								//
+								key={item.index}
 								id={item.id}
+								title={item.title}
 								quoteText={item.quoteText}
 							/>
 						))}
@@ -49,6 +51,7 @@ const LikedQuotesScreen = ({ navigation }) => {
 				)}
 			</View>
 			{/*  */}
+			<Text></Text>
 		</ScrollView>
 	);
 };

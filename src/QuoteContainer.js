@@ -9,7 +9,7 @@ import { AntDesign } from "@expo/vector-icons";
 //
 import { useStateValue } from "./StateProvider";
 
-function quoteContainer({ id, title, quoteText }) {
+function QuoteContainer({ id, title, quoteText }) {
 	// split apart the object, and grab the id, title, image, price,rating
 
 	const [{}, dispatch] = useStateValue();
@@ -42,7 +42,7 @@ function quoteContainer({ id, title, quoteText }) {
 				<View style={styles.textandquotes}>
 					<Text style={styles.quotetitle}> {title}</Text>
 					<LeftQuote />
-					<Text style={styles.shortquote}>{quoteText}</Text>
+					<Text style={styles.thequote}>{quoteText}</Text>
 					<RightQuote />
 				</View>
 			</ImageBackground>
@@ -59,4 +59,4 @@ function quoteContainer({ id, title, quoteText }) {
 	);
 }
 
-export default quoteContainer;
+export default QuoteContainer;
