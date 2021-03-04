@@ -4,12 +4,12 @@ import styles from "./ScreenStyles";
 //
 import LeftQuote from "./LeftQuote";
 import RightQuote from "./RightQuote";
-// icons
+//
 import { AntDesign } from "@expo/vector-icons";
+//
+import { useStateValue } from "./StateProvider";
 
-import { useStateValue } from "./StateProvider.js";
-
-function LongQuoteContainer({ id, quoteText }) {
+function quoteContainer({ id, title, quoteText }) {
 	// split apart the object, and grab the id, title, image, price,rating
 
 	const [{}, dispatch] = useStateValue();
@@ -25,6 +25,7 @@ function LongQuoteContainer({ id, quoteText }) {
 			type: "ADD_TO_BASKET", // this is the action.type from the reducer.js
 			item: {
 				id: id, // fetch the id of the item that's being added
+				title: title,
 				quoteText: quoteText
 			}
 		});
@@ -39,8 +40,9 @@ function LongQuoteContainer({ id, quoteText }) {
 				imageStyle={{ borderRadius: 5 }}
 			>
 				<View style={styles.textandquotes}>
+					<Text style={styles.quotetitle}> {title}</Text>
 					<LeftQuote />
-					<Text style={styles.longquote}>{quoteText}</Text>
+					<Text style={styles.shortquote}>{quoteText}</Text>
 					<RightQuote />
 				</View>
 			</ImageBackground>
@@ -57,4 +59,4 @@ function LongQuoteContainer({ id, quoteText }) {
 	);
 }
 
-export default LongQuoteContainer;
+export default quoteContainer;

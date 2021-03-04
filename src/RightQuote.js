@@ -10,7 +10,7 @@ const RightQuote = () => {
 			<FontAwesome
 				style={styles.quotes_right}
 				name="quote-right"
-				size={54}
+				size={44}
 				color="white"
 			/>
 		</View>

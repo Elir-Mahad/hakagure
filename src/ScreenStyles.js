@@ -192,6 +192,12 @@ export default StyleSheet.create({
 		justifyContent: "center",
 		backgroundColor: "white",
 		margin: 15
+		// height: 900
+	},
+	quotetitle: {
+		color: "white",
+		textAlign: "center",
+		fontSize: 20
 	},
 	quotes_left: {
 		alignSelf: "flex-start",

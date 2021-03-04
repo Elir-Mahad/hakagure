@@ -18,7 +18,7 @@ const WelcomeScreenOne = ({ navigation }) => {
 			<StatusBar style="light" />
 			{/*  */}
 			<ImageBackground
-				source={require("../screens/screen_assets/samurai_guard.jpg")}
+				source={require("./screen_assets/samurai_guard.jpg")}
 				style={styles.WelcomeBackgroundImage}
 				imageStyle={{ borderRadius: 5 }}
 			>

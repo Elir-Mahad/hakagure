@@ -7,14 +7,14 @@ import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 
 // import DrawerNavigator from "./screens/DrawerNavigator";
-import StackNavigator from "./screens/StackNavigator";
+import StackNavigator from "./src/StackNavigator";
 
 // below are the different screen components
-import WelcomeScreenOne from "./screens/WelcomeScreenOne";
+import WelcomeScreenOne from "./src/WelcomeScreenOne";
 //
-import { StateProvider } from "./screens/StateProvider";
-import { initialState } from "./screens/reducer.js";
-import reducer from "./screens/reducer";
+import { StateProvider } from "./src/StateProvider";
+import { initialState } from "./src/reducer.js";
+import reducer from "./src/reducer";
 
 // below are the necessary imports for custom fonts
 import * as Font from "expo-font";

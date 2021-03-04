@@ -10,7 +10,7 @@ const LeftQuote = () => {
 			<FontAwesome
 				style={styles.quotes_left}
 				name="quote-left"
-				size={54}
+				size={44}
 				color="white"
 			/>
 		</View>
