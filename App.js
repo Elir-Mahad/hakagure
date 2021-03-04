@@ -6,10 +6,15 @@ import React, { useState } from "react";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 
-// below are the different screen components
-import WelcomeScreenOne from "./screens/WelcomeScreenOne";
 // import DrawerNavigator from "./screens/DrawerNavigator";
 import StackNavigator from "./screens/StackNavigator";
+
+// below are the different screen components
+import WelcomeScreenOne from "./screens/WelcomeScreenOne";
+//
+import { StateProvider } from "./screens/StateProvider";
+import { initialState } from "./screens/reducer.js";
+import reducer from "./screens/reducer";
 
 // below are the necessary imports for custom fonts
 import * as Font from "expo-font";
@@ -64,7 +69,9 @@ export default function App() {
 				centerComponent={{ text: "Home", style: { color: "#fff" } }}
 			/>
 			<DrawerNavigator /> */}
-			<StackNavigator />
+			<StateProvider initialState={initialState} reducer={reducer}>
+				<StackNavigator />
+			</StateProvider>
 		</NavigationContainer>
 	);
 }

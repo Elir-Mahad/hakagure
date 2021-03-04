@@ -9,6 +9,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import WelcomeScreenOne from "./WelcomeScreenOne";
 import WelcomeScreenTwo from "./WelcomeScreenTwo";
 import TableOfContentsScreen from "./TableOfContentsScreen";
+//
+import LikedQuotesScreen from "./all_screens/LikedQuotesScreen";
+// import DislikedQuotes from "./DislikedQuotesScreen";
+//
 import EduScreen from "./all_screens/EduScreen";
 import CourageScreen from "./all_screens/CourageScreen";
 import DeathScreen from "./all_screens/DeathScreen";
@@ -42,6 +46,10 @@ const StackNavigator = () => {
 			<Stack.Screen
 				name="Table of Contents" // Give the component a name
 				component={TableOfContentsScreen} // Import the component
+			/>
+			<Stack.Screen
+				name="Liked" // Give the component a name
+				component={LikedQuotesScreen} // Import the component
 			/>
 			<Stack.Screen
 				name="Education" // Give the component a name

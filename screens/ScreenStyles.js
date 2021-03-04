@@ -174,6 +174,18 @@ export default StyleSheet.create({
 		paddingTop: 20,
 		paddingBottom: 20
 	},
+	itemcount: {
+		position: "absolute",
+		height: 35,
+		width: 30,
+		padding: 10,
+		borderRadius: 15,
+		backgroundColor: "lightblue",
+		right: 35,
+		bottom: 15,
+		alignItems: "center",
+		justifyContent: "center"
+	},
 	quote_container: {
 		flex: 1,
 		alignItems: "center",

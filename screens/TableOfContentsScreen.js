@@ -18,7 +18,7 @@ const TableOfContentsScreen = ({ navigation }) => {
 			<View style={styles.preferences}>
 				<TouchableOpacity
 					style={styles.personalcategory}
-					// onPress={() => navigation.navigate("Education 1")}
+					onPress={() => navigation.navigate("Liked")}
 				>
 					<Image
 						//

@@ -97,8 +97,7 @@ const TimeScreen = ({ navigation }) => {
 						<Text style={styles.longquote}>
 							For example, if one were called before the master to explain
 							something right away, he would most likely be perplexed. This is
-							proof that he understands the two to be different. This is proof
-							that he understands the two to be different.
+							proof that he understands the two to be different.
 						</Text>
 						<Text style={styles.longquote}>
 							When one attempts to concentrate things in this manner, won’t
