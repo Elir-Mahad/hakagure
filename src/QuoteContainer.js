@@ -5,6 +5,7 @@ import styles from "./ScreenStyles";
 import LeftQuote from "./LeftQuote";
 import RightQuote from "./RightQuote";
 //
+import { Button } from "@material-ui/core";
 import { AntDesign } from "@expo/vector-icons";
 //
 import { useStateValue } from "./StateProvider";
@@ -46,15 +47,20 @@ function QuoteContainer({ id, title, quoteText }) {
 					<RightQuote />
 				</View>
 			</ImageBackground>
-			<View style={styles.category_icons}>
-				<AntDesign
-					//
-					name="hearto"
-					size={24}
-					color="black"
-					onPress={addToBasket}
-				/>
-			</View>
+			<Button
+				//
+				color="primary"
+			>
+				<View style={styles.category_icons}>
+					<AntDesign
+						//
+						name="hearto"
+						size={24}
+						color="black"
+						onPress={addToBasket}
+					/>
+				</View>
+			</Button>
 		</View>
 	);
 }

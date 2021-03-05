@@ -28,8 +28,11 @@ const EduScreen = ({ navigation }) => {
 					<Text style={styles.itemcount}>{basket?.length}</Text>
 				</View>
 				{/*  */}
-				{/* <LongQuoteContainer id="" quoteText="" />
-				<ShortQuoteContainer id="" quoteText="" /> */}
+				{/* <QuoteContainer
+						title="" 
+						id="" 
+						quoteText="" 
+					/> */}
 				<QuoteContainer
 					//
 					id="1edu"
@@ -56,51 +59,77 @@ const EduScreen = ({ navigation }) => {
 				/>
 				<QuoteContainer
 					//
+					title="Calculation #1"
 					id="5edu"
 					quoteText="Calculating people are contemptible.
 					The reason for this is that calculation deals with loss and gain.
-					Death is considered loss and life is considered gain. 
+					"
+				/>
+				<QuoteContainer
+					//
+					title="Calculation #2"
+					id="6edu"
+					quoteText="Death is considered loss and life is considered gain. 
 					Thus, death is something that such a person does not care for,and he is contemptible."
 				/>
 				<QuoteContainer
 					//
-					id="6edu"
+					id="7edu"
 					quoteText="There are times when extensive knowledge becomes a hindrance.
 					Knowing the circumstances can be an obstruction in everyday
 					affairs."
 				/>
 				<QuoteContainer
 					//
-					id="7edu"
-					quoteText="Discrimination will never be brought to a conclusion. With an
-					intense, fresh and undelaying spirit, one must make his judgments
-					within the space of seven breaths.It is a matter of being determined and having the spirit to break
+					title="7 breaths #1"
+					id="8edu"
+					quoteText="Discrimination will never be brought to a conclusion."
+				/>
+				<QuoteContainer
+					//
+					title="7 breaths #2"
+					id="9edu"
+					quoteText="With an intense, fresh and undelaying spirit, one must make his judgments
+					within the space of seven breaths."
+				/>
+				<QuoteContainer
+					//
+					title="7 breaths #3"
+					id="10edu"
+					quoteText="It is a matter of being determined and having the spirit to break
 					right through to the other side."
 				/>
 				<QuoteContainer
 					//
-					id="8edu"
+					title="Wisdom #1"
+					id="11edu"
 					quoteText="A man received an oral teaching concerning the Bravery. He neither
 					wrote it down nor committed it to memory but rather forgot it
-					completely. Then, in facing real situations, he acted on impulse and the
+					completely."
+				/>
+				<QuoteContainer
+					//
+					title="Wisdom #2"
+					id="12edu"
+					quoteText="Then, in facing real situations, he acted on impulse and the
 					things that he had learned became wisdom of his own."
 				/>
 				<QuoteContainer
 					//
-					id="9edu"
+					id="13edu"
 					quoteText="If one does not strike out by simply closing his eyes and rushing
 					into the enemy, even if it is only one step, he will be of no use."
 				/>
 				<QuoteContainer
 					//
-					id="10edu"
+					id="14edu"
 					quoteText="When the time comes, there is no moment for reasoning. And if you
 					have not done your inquiring beforehand , there is most often
 					shame."
 				/>
 				<QuoteContainer
 					//
-					id="11edu"
+					id="15edu"
 					quoteText="The resourcefulness of times of peace is the military preparation
 					for times of war."
 				/>

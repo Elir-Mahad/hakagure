@@ -54,26 +54,26 @@ const StackNavigator = () => {
 				name="Education" // Give the component a name
 				component={EduScreen} // Import the component
 			/>
-			{/* <Stack.Screen
+			<Stack.Screen
 				name="Courage" // Give the component a name
 				component={CourageScreen} // Import the component
 			/>
 			<Stack.Screen
 				name="Death" // Give the component a name
 				component={DeathScreen} // Import the component
-			/> */}
+			/>
 			<Stack.Screen
 				name="Character" // Give the component a name
 				component={CharacterScreen} // Import the component
 			/>
-			{/* <Stack.Screen
+			<Stack.Screen
 				name="Speech" // Give the component a name
 				component={SpeechScreen} // Import the component
 			/>
 			<Stack.Screen
 				name="Time" // Give the component a name
 				component={TimeScreen} // Import the component
-			/> */}
+			/>
 		</Stack.Navigator>
 	);
 };

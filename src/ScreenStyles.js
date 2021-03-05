@@ -176,10 +176,10 @@ export default StyleSheet.create({
 	itemcount: {
 		position: "absolute",
 		height: 35,
-		width: 30,
+		width: 45,
 		padding: 10,
 		borderRadius: 15,
-		backgroundColor: "lightblue",
+		// backgroundColor: "lightblue",
 		right: 35,
 		bottom: 15,
 		alignItems: "center",
