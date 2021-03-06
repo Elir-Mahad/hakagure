@@ -1,7 +1,24 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-	//
+	//On all screens
+	basketandcount: {
+		marginRight: 10
+	},
+	itemcount: {
+		position: "absolute",
+		height: 33,
+		width: 30,
+		borderRadius: 15,
+		backgroundColor: "black",
+		color: "white",
+		right: 30,
+		bottom: 10,
+		padding: 7,
+		alignItems: "center",
+		textAlign: "center",
+		justifyContent: "center"
+	},
 	// Styles for WelcomeOneScreen
 	//
 	welcome_container: {
@@ -104,30 +121,7 @@ export default StyleSheet.create({
 		backgroundColor: "white",
 		justifyContent: "center"
 	},
-	//
-	// worstquotesimage: {
-	// 	width: 55,
-	// 	height: 55
-	// },
-	//
-	categories: {
-		display: "flex",
-		flexDirection: "row"
-	},
-	table_category: {
-		marginBottom: 15,
-		borderRadius: 3,
-		borderWidth: 1,
-		height: 100,
-		width: 170,
-		margin: 4,
-		paddingLeft: 6,
-		paddingRight: 6,
-		paddingTop: 2,
-		paddingBottom: 6,
-		display: "flex",
-		justifyContent: "space-between"
-	},
+	// liked quotes category
 	favourite_category: {
 		backgroundColor: "black",
 		marginBottom: 15,
@@ -156,6 +150,25 @@ export default StyleSheet.create({
 		fontSize: 17,
 		textAlign: "left"
 	},
+	// rest of the topic categories
+	categories: {
+		display: "flex",
+		flexDirection: "row"
+	},
+	table_category: {
+		marginBottom: 15,
+		borderRadius: 3,
+		borderWidth: 1,
+		height: 100,
+		width: 170,
+		margin: 4,
+		paddingLeft: 6,
+		paddingRight: 6,
+		paddingTop: 2,
+		paddingBottom: 6,
+		display: "flex",
+		justifyContent: "space-between"
+	},
 	table_titleandcount: {
 		display: "flex",
 		flexDirection: "row",
@@ -175,29 +188,23 @@ export default StyleSheet.create({
 		width: 30,
 		height: 30
 	},
-	//
+	//LikeQuotesScreen
+	nolikedqotescontainer: {
+		backgroundColor: "black",
+		padding: 10
+	},
+	nolikedquotestext: {
+		color: "white",
+		fontSize: 20,
+		textAlign: "center",
+		padding: 5
+	},
+
 	// Quotes Container styles
 	//
 	category_screen: {
 		backgroundColor: "#e6e6e6",
 		paddingTop: 20
-	},
-	basketandcount: {
-		marginRight: 10
-	},
-	itemcount: {
-		position: "absolute",
-		height: 33,
-		width: 30,
-		borderRadius: 15,
-		backgroundColor: "black",
-		color: "white",
-		right: 30,
-		bottom: 10,
-		padding: 7,
-		alignItems: "center",
-		textAlign: "center",
-		justifyContent: "center"
 	},
 	backgroundimage: {
 		flex: 1,

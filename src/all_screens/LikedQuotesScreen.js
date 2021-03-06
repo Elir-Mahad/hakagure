@@ -22,18 +22,21 @@ const LikedQuotesScreen = ({ navigation }) => {
 			{/*  */}
 			<StatusBar style="dark" />
 			{/*  */}
-			<Text style={styles.title}> Your favourite quotes </Text>
-
 			{/*  */}
 			<View>
 				{basket.length === 0 ? ( // if the basket is empty, has no items, then return the below div
-					<View>
-						<Text> You have no Favourite quotes</Text>
+					<View style={styles.nolikedqotescontainer}>
+						<Text style={styles.nolikedquotestext}>
+							{" "}
+							You have no Favourite quotes
+						</Text>
 					</View>
 				) : (
 					// other wise (i.e, if the basket is not empty) return the below div
 
 					<View>
+						<Text style={styles.title}> Your favourite quotes </Text>
+
 						{/* list all the checkout products */}
 
 						{/* for every single item, return the checkout products component */}
