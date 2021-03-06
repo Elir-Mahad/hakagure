@@ -15,7 +15,7 @@ const WelcomeScreenOne = ({ navigation }) => {
 	return (
 		<KeyboardAvoidingView style={styles.welcome_container}>
 			{/*  */}
-			<StatusBar style="light" />
+			<StatusBar style="dark" />
 			{/*  */}
 			<ImageBackground
 				source={require("./screen_assets/samurai_guard.jpg")}

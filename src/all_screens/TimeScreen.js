@@ -20,15 +20,9 @@ const TimeScreen = ({ navigation }) => {
 	//
 	return (
 		<ScrollView style={styles.category_screen}>
-			<StatusBar style="light" />
+			<StatusBar style="dark" />
 			<View>
 				{/*  */}
-				<View>
-					<ShoppingCartIcon />
-					<Text style={styles.itemcount}>{basket?.length}</Text>
-				</View>
-				{/*  */}
-
 				<QuoteContainer
 					id="Tm1"
 					quoteText="If something is not brought to fruition over a period of twenty to
@@ -64,8 +58,7 @@ const TimeScreen = ({ navigation }) => {
 				<QuoteContainer
 					title="Present #1"
 					id="Tm6"
-					quoteText="
-                    “right now” is ”at that time, ” and ”at that time” is ”right now”.
+					quoteText="“right now” is ”at that time, ” and ”at that time” is ”right now”.
                     "
 				/>
 

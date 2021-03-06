@@ -170,19 +170,24 @@ export default StyleSheet.create({
 	// Quotes Container styles
 	//
 	category_screen: {
-		backgroundColor: "lightgrey",
+		backgroundColor: "#e6e6e6",
 		paddingTop: 20
+	},
+	basketandcount: {
+		marginRight: 10
 	},
 	itemcount: {
 		position: "absolute",
-		height: 35,
-		width: 45,
-		padding: 10,
+		height: 33,
+		width: 30,
 		borderRadius: 15,
-		// backgroundColor: "lightblue",
-		right: 35,
-		bottom: 15,
+		backgroundColor: "black",
+		color: "white",
+		right: 30,
+		bottom: 10,
+		padding: 7,
 		alignItems: "center",
+		textAlign: "center",
 		justifyContent: "center"
 	},
 	backgroundimage: {
@@ -227,7 +232,6 @@ export default StyleSheet.create({
 	category_icons: {
 		backgroundColor: "white",
 		width: "100%",
-		padding: 10,
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-evenly"

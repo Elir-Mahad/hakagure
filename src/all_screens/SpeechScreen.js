@@ -20,13 +20,8 @@ const SpeechScreen = ({ navigation }) => {
 	//
 	return (
 		<ScrollView style={styles.category_screen}>
-			<StatusBar style="light" />
+			<StatusBar style="dark" />
 			<View>
-				{/* */}
-				<View>
-					<ShoppingCartIcon />
-					<Text style={styles.itemcount}>{basket?.length}</Text>
-				</View>
 				{/*  */}
 				<QuoteContainer
 					title="Jest #1"

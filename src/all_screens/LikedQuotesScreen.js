@@ -20,7 +20,7 @@ const LikedQuotesScreen = ({ navigation }) => {
 	return (
 		<ScrollView style={styles.category_screen}>
 			{/*  */}
-			<StatusBar style="light" />
+			<StatusBar style="dark" />
 			{/*  */}
 			<Text style={styles.title}> Your favourite quotes </Text>
 

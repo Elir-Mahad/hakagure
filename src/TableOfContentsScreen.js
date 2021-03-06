@@ -13,28 +13,21 @@ const TableOfContentsScreen = ({ navigation }) => {
 	//
 	return (
 		<KeyboardAvoidingView style={styles.table_container}>
-			<StatusBar style="light" />
+			<StatusBar style="dark" />
 
 			<View style={styles.preferences}>
 				<TouchableOpacity
 					style={styles.personalcategory}
 					onPress={() => navigation.navigate("Liked")}
 				>
+					<View style={styles.table_titleandcount}>
+						{/* <Text style={styles.table_categoryname}>Favourite</Text> */}
+						{/* <Text style={styles.table_categorycount}>11</Text> */}
+					</View>
 					<Image
 						//
 						style={styles.bestquotesimage}
 						source={require("./screen_assets/likeimage.png")}
-					/>
-				</TouchableOpacity>
-
-				<TouchableOpacity
-					style={styles.personalcategory}
-					// onPress={() => navigation.navigate("")}
-				>
-					<Image
-						//
-						style={styles.worstquotesimage}
-						source={require("./screen_assets/dislikeimage.png")}
 					/>
 				</TouchableOpacity>
 			</View>

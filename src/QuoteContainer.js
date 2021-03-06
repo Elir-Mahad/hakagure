@@ -1,11 +1,10 @@
 import React from "react";
-import { Text, View, ImageBackground } from "react-native";
+import { Text, View, ImageBackground, TouchableHighlight } from "react-native";
 import styles from "./ScreenStyles";
 //
 import LeftQuote from "./LeftQuote";
 import RightQuote from "./RightQuote";
 //
-import { Button } from "@material-ui/core";
 import { AntDesign } from "@expo/vector-icons";
 //
 import { useStateValue } from "./StateProvider";
@@ -47,22 +46,24 @@ function QuoteContainer({ id, title, quoteText }) {
 					<RightQuote />
 				</View>
 			</ImageBackground>
-			<Button
-				//
-				color="primary"
-			>
-				<View style={styles.category_icons}>
+			<View style={styles.category_icons}>
+				<TouchableHighlight
+					onPress={addToBasket}
+					underlayColor="lightgrey"
+					style={{ padding: 5 }}
+				>
 					<AntDesign
 						//
 						name="hearto"
 						size={24}
-						color="black"
-						onPress={addToBasket}
+						color="darkblue"
 					/>
-				</View>
-			</Button>
+				</TouchableHighlight>
+			</View>
 		</View>
 	);
 }
+
+// f4f4f2
 
 export default QuoteContainer;

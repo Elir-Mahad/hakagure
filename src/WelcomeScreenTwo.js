@@ -14,7 +14,7 @@ const WelcomeScreenTwo = ({ navigation }) => {
 	return (
 		<KeyboardAvoidingView style={styles.DescriptionContainer}>
 			{/*  */}
-			<StatusBar style="light" />
+			<StatusBar style="dark" />
 			{/*  */}
 			<Image
 				//

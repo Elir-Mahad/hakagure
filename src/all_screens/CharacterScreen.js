@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 //
 import QuoteContainer from "../QuoteContainer";
 //
-import ShoppingCartIcon from "../ShoppingCartIcon";
+// import ShoppingCartIcon from "../ShoppingCartIcon";
 //
 import { useStateValue } from "../StateProvider";
 
@@ -20,17 +20,9 @@ const CharacterScreen = ({ navigation }) => {
 	//
 	return (
 		<ScrollView style={styles.category_screen}>
-			<StatusBar style="light" />
+			<StatusBar style="dark" />
 			<View>
 				{/*  */}
-				<View>
-					<ShoppingCartIcon />
-					<Text style={styles.itemcount}>{basket?.length}</Text>
-				</View>
-				{/*  */}
-				{/* <LongQuoteContainer id="" quoteText="" />
-				<ShortQuoteContainer id="" quoteText="" /> */}
-
 				<QuoteContainer
 					id="1cha"
 					quoteText="The foundation of a samurai is in knowing that being made a ronin

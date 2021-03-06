@@ -1,20 +1,33 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import Icon from "react-native-vector-icons/Ionicons";
+import styles from "./ScreenStyles";
+//
+import { View, Text } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+//
+import { useStateValue } from "./StateProvider";
 
 const ShoppingCartIcon = () => {
+	//
+	const [{ basket }] = useStateValue();
+	//
+	console.log(basket);
+	//
 	return (
-		<View style={styles.container}>
-			<View style={styles.itemcount}></View>
-			<Icon name="ios-cart" size={30} />
+		<View style={styles.basketandcount}>
+			<Ionicons
+				//
+				name="basket-outline"
+				size={30}
+				color="black"
+			/>
+			<Text
+				//
+				style={styles.itemcount}
+			>
+				{basket?.length}
+			</Text>
 		</View>
 	);
 };
 
 export default ShoppingCartIcon;
-
-const styles = StyleSheet.create({
-	container: {
-		padding: 5
-	}
-});

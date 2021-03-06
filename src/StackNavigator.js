@@ -18,14 +18,16 @@ import DeathScreen from "./all_screens/DeathScreen";
 import CharacterScreen from "./all_screens/CharacterScreen";
 import SpeechScreen from "./all_screens/SpeechScreen";
 import TimeScreen from "./all_screens/TimeScreen";
+import ShoppingCartIcon from "./ShoppingCartIcon";
 
 //!--- Declare the global screen options and initialize the createStackNaviagtor
 
 const globalScreenOptions = {
 	// The constant globalScreenOptions stores the below css styles
-	headerStyle: { backgroundColor: "#222831" },
-	headerTitleStyle: { color: "white" },
-	headerTintiColor: "white"
+	headerStyle: { backgroundColor: "#f4f4f2" },
+	headerTitleStyle: { color: "black" },
+	headerTintiColor: "black",
+	headerRight: () => <ShoppingCartIcon />
 };
 
 const Stack = createStackNavigator();
