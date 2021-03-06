@@ -105,29 +105,10 @@ export default StyleSheet.create({
 		justifyContent: "center"
 	},
 	//
-	preferences: {
-		display: "flex",
-		flexDirection: "row"
-	},
-	personalcategory: {
-		marginBottom: 15,
-		borderRadius: 3,
-		borderWidth: 1,
-		width: 170,
-		margin: 4,
-		padding: 4,
-		display: "flex",
-		justifyContent: "center",
-		flexDirection: "row"
-	},
-	bestquotesimage: {
-		width: 55,
-		height: 55
-	},
-	worstquotesimage: {
-		width: 55,
-		height: 55
-	},
+	// worstquotesimage: {
+	// 	width: 55,
+	// 	height: 55
+	// },
 	//
 	categories: {
 		display: "flex",
@@ -146,6 +127,34 @@ export default StyleSheet.create({
 		paddingBottom: 6,
 		display: "flex",
 		justifyContent: "space-between"
+	},
+	favourite_category: {
+		backgroundColor: "black",
+		marginBottom: 15,
+		borderRadius: 3,
+		borderWidth: 1,
+		height: 40,
+		width: 170,
+		margin: 4,
+		paddingLeft: 6,
+		paddingRight: 6,
+		paddingTop: 2,
+		paddingBottom: 6,
+		display: "flex",
+		justifyContent: "space-between"
+	},
+	table_favtitleicon: {
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-between",
+		alignItems: "center",
+		flex: 1
+	},
+	table_favcategoryname: {
+		fontFamily: "Inconsolata-Regular",
+		color: "white",
+		fontSize: 17,
+		textAlign: "left"
 	},
 	table_titleandcount: {
 		display: "flex",

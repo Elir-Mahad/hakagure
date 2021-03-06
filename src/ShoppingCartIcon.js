@@ -6,7 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 //
 import { useStateValue } from "./StateProvider";
 
-const ShoppingCartIcon = () => {
+const ShoppingCartIcon = ({ navigation }) => {
 	//
 	const [{ basket }] = useStateValue();
 	//

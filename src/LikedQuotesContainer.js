@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, ImageBackground } from "react-native";
+import { Text, View, ImageBackground, TouchableHighlight } from "react-native";
 import styles from "./ScreenStyles";
 //
 import LeftQuote from "./LeftQuote";
@@ -43,13 +43,18 @@ function LikedQuotesContainer({ id, title, quoteText }) {
 				</View>
 			</ImageBackground>
 			<View style={styles.category_icons}>
-				<FontAwesome
-					//
-					name="remove"
-					size={24}
-					color="black"
+				<TouchableHighlight
 					onPress={removeFromBasket}
-				/>
+					underlayColor="lightgrey"
+					style={{ padding: 5 }}
+				>
+					<FontAwesome
+						//
+						name="remove"
+						size={24}
+						color="black"
+					/>
+				</TouchableHighlight>
 			</View>
 		</View>
 	);
