@@ -5,7 +5,7 @@ import styles from "./ScreenStyles";
 import LeftQuote from "./LeftQuote";
 import RightQuote from "./RightQuote";
 //
-import { FontAwesome } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 //
 import { useStateValue } from "./StateProvider";
 
@@ -48,9 +48,9 @@ function LikedQuotesContainer({ id, title, quoteText }) {
 					underlayColor="lightgrey"
 					style={{ padding: 5 }}
 				>
-					<FontAwesome
+					<AntDesign
 						//
-						name="remove"
+						name="delete"
 						size={24}
 						color="black"
 					/>
