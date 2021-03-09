@@ -46,6 +46,7 @@ const LikedQuotesScreen = ({ navigation }) => {
 								//
 								key={item.index}
 								id={item.id}
+								tag={item.tag}
 								title={item.title}
 								quoteText={item.quoteText}
 							/>

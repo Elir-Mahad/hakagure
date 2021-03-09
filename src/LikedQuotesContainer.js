@@ -5,11 +5,12 @@ import styles from "./ScreenStyles";
 import LeftQuote from "./LeftQuote";
 import RightQuote from "./RightQuote";
 //
+import { MaterialIcons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 //
 import { useStateValue } from "./StateProvider";
 
-function LikedQuotesContainer({ id, title, quoteText }) {
+function LikedQuotesContainer({ id, tag, title, quoteText }) {
 	//
 	const [{}, dispatch] = useStateValue();
 	// THIS IS THE DATA LAYER FROM STATE PROVIDER
@@ -35,12 +36,29 @@ function LikedQuotesContainer({ id, title, quoteText }) {
 				style={styles.backgroundimage}
 				imageStyle={{ borderRadius: 5 }}
 			>
+				<View style={styles.topTextIcon}>
+					{/* Tag and icon */}
+					<View style={styles.textIcon}>
+						<MaterialIcons name="subject" size={24} color="black" />
+						<Text style={styles.tag}>{tag}</Text>
+					</View>
+					{/* Quote title and icon */}
+					<View style={styles.textIcon}>
+						<Text style={styles.quotetitle}> {title}</Text>
+						<MaterialIcons
+							name="format-list-numbered-rtl"
+							size={24}
+							color="black"
+						/>
+					</View>
+				</View>
+				{/* The actual quote is below */}
 				<View style={styles.textandquotes}>
-					<Text style={styles.quotetitle}> {title}</Text>
 					<LeftQuote />
 					<Text style={styles.thequote}>{quoteText}</Text>
 					<RightQuote />
 				</View>
+				{/*  */}
 			</ImageBackground>
 			<View style={styles.category_icons}>
 				<TouchableHighlight

@@ -5,13 +5,15 @@ import styles from "./ScreenStyles";
 import LeftQuote from "./LeftQuote";
 import RightQuote from "./RightQuote";
 //
+import { MaterialIcons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 //
 import { useStateValue } from "./StateProvider";
 
-function QuoteContainer({ id, title, quoteText }) {
-	// split apart the object, and grab the id, title, image, price,rating
+function QuoteContainer({ id, tag, title, quoteText }) {
+	// split apart the object, and grab the id, title, and quote text
 
+	//
 	const [{}, dispatch] = useStateValue();
 	// THIS IS THE DATA LAYER FROM STATE PROVIDER
 	// THIS IS USUALLY SUMMONED
@@ -25,6 +27,7 @@ function QuoteContainer({ id, title, quoteText }) {
 			type: "ADD_TO_BASKET", // this is the action.type from the reducer.js
 			item: {
 				id: id, // fetch the id of the item that's being added
+				tag: tag,
 				title: title,
 				quoteText: quoteText
 			}
@@ -39,24 +42,42 @@ function QuoteContainer({ id, title, quoteText }) {
 				style={styles.backgroundimage}
 				imageStyle={{ borderRadius: 5 }}
 			>
+				<View style={styles.topTextIcon}>
+					{/* Tag and icon */}
+					<View style={styles.textIcon}>
+						<MaterialIcons name="subject" size={24} color="black" />
+						<Text style={styles.tag}>{tag}</Text>
+					</View>
+					{/* Quote title and icon */}
+					<View style={styles.textIcon}>
+						<Text style={styles.quotetitle}> {title}</Text>
+						<MaterialIcons
+							name="format-list-numbered-rtl"
+							size={24}
+							color="black"
+						/>
+					</View>
+				</View>
+				{/* The actual quote is below */}
 				<View style={styles.textandquotes}>
-					<Text style={styles.quotetitle}> {title}</Text>
 					<LeftQuote />
 					<Text style={styles.thequote}>{quoteText}</Text>
 					<RightQuote />
 				</View>
+				{/*  */}
 			</ImageBackground>
 			<View style={styles.category_icons}>
 				<TouchableHighlight
+					//
 					onPress={addToBasket}
-					underlayColor="lightgrey"
+					underlayColor="red"
 					style={{ padding: 5 }}
 				>
 					<AntDesign
 						//
-						name="hearto"
-						size={24}
-						color="darkred"
+						name="heart"
+						size={22}
+						color="black"
 					/>
 				</TouchableHighlight>
 			</View>

@@ -165,12 +165,14 @@ export default StyleSheet.create({
 		padding: 10
 	},
 	nolikedquotestext: {
+		fontFamily: "Inconsolata-Regular",
 		color: "white",
 		fontSize: 20,
 		textAlign: "center",
 		padding: 5
 	},
 	likedquotestitle: {
+		fontFamily: "Inconsolata-Regular",
 		textAlign: "center",
 		fontSize: 17,
 		paddingTop: 10,
@@ -201,10 +203,29 @@ export default StyleSheet.create({
 		backgroundColor: "white",
 		margin: 15
 	},
+	topTextIcon: {
+		backgroundColor: "white",
+		display: "flex",
+		alignItems: "center",
+		flexDirection: "row",
+		justifyContent: "space-between",
+		padding: 5
+	},
+	textIcon: {
+		display: "flex",
+		flexDirection: "row",
+		alignItems: "center"
+	},
+	tag: {
+		fontFamily: "Inconsolata-Regular",
+		fontSize: 14,
+		color: "black"
+	},
 	quotetitle: {
-		color: "white",
-		textAlign: "center",
-		fontSize: 20
+		fontFamily: "Inconsolata-Regular",
+		color: "black",
+		fontSize: 14,
+		marginRight: 5
 	},
 	quotes_left: {
 		alignSelf: "flex-start",
@@ -218,8 +239,8 @@ export default StyleSheet.create({
 		padding: 30
 	},
 	thequote: {
-		color: "white",
 		fontFamily: "Inconsolata-Regular",
+		color: "white",
 		fontSize: 23,
 		padding: 5,
 		textAlign: "left"
