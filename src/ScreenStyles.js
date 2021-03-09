@@ -199,8 +199,16 @@ export default StyleSheet.create({
 		textAlign: "center",
 		padding: 5
 	},
-
-	// Quotes Container styles
+	likedquotestitle: {
+		textAlign: "center",
+		fontSize: 17,
+		paddingTop: 10,
+		paddingBottom: 10,
+		borderBottomWidth: 1,
+		borderTopWidth: 1,
+		backgroundColor: "white"
+	},
+	// Other Quotes Container styles
 	//
 	category_screen: {
 		backgroundColor: "#e6e6e6",

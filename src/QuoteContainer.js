@@ -56,7 +56,7 @@ function QuoteContainer({ id, title, quoteText }) {
 						//
 						name="hearto"
 						size={24}
-						color="darkblue"
+						color="darkred"
 					/>
 				</TouchableHighlight>
 			</View>

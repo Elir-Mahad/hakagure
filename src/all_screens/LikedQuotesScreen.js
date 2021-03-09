@@ -35,7 +35,7 @@ const LikedQuotesScreen = ({ navigation }) => {
 					// other wise (i.e, if the basket is not empty) return the below div
 
 					<View>
-						<Text style={styles.title}> Your favourite quotes </Text>
+						<Text style={styles.likedquotestitle}> Your favourite quotes </Text>
 
 						{/* list all the checkout products */}
 
