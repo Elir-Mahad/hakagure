@@ -18,7 +18,7 @@ import LikedQuotesScreen from "./all_screens/LikedQuotesScreen";
 import EduScreen from "./all_screens/EduScreen";
 import CourageScreen from "./all_screens/CourageScreen";
 import DeathScreen from "./all_screens/DeathScreen";
-import CharacterScreen from "./all_screens/CharacterScreen";
+import ConductScreen from "./all_screens/ConductScreen";
 import SpeechScreen from "./all_screens/SpeechScreen";
 import TimeScreen from "./all_screens/TimeScreen";
 //
@@ -68,8 +68,8 @@ const StackNavigator = () => {
 				component={DeathScreen} // Import the component
 			/>
 			<Stack.Screen
-				name="Character" // Give the component a name
-				component={CharacterScreen} // Import the component
+				name="Conduct" // Give the component a name
+				component={ConductScreen} // Import the component
 			/>
 			<Stack.Screen
 				name="Speech" // Give the component a name

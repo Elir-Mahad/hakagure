@@ -72,10 +72,10 @@ const TableOfContentsScreen = ({ navigation }) => {
 
 				<TouchableOpacity
 					style={styles.table_category}
-					onPress={() => navigation.navigate("Character")}
+					onPress={() => navigation.navigate("Conduct")}
 				>
 					<View style={styles.table_titleandcount}>
-						<Text style={styles.table_categoryname}>Character</Text>
+						<Text style={styles.table_categoryname}>Conduct</Text>
 						<Text style={styles.table_categorycount}>21</Text>
 					</View>
 

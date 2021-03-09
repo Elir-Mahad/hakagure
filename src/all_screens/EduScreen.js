@@ -53,7 +53,7 @@ const EduScreen = ({ navigation }) => {
 					//
 					id="5edu"
 					tag="Education"
-					title="Calculation 1"
+					title="Calculation #1"
 					quoteText="Calculating people are contemptible.
 					The reason for this is that calculation deals with loss and gain.
 					"
@@ -62,7 +62,7 @@ const EduScreen = ({ navigation }) => {
 					//
 					id="6edu"
 					tag="Education"
-					title="Calculation 2"
+					title="Calculation #2"
 					quoteText="Death is considered loss and life is considered gain. 
 					Thus, death is something that such a person does not care for,and he is contemptible."
 				/>
@@ -78,14 +78,14 @@ const EduScreen = ({ navigation }) => {
 					//
 					id="8edu"
 					tag=" Education"
-					title="Seven breaths 1"
+					title="Seven breaths #1"
 					quoteText="Discrimination will never be brought to a conclusion."
 				/>
 				<QuoteContainer
 					//
 					id="9edu"
 					tag=" Education"
-					title="Seven breaths 2"
+					title="Seven breaths #2"
 					quoteText="With an intense, fresh and undelaying spirit, one must make his judgments
 					within the space of seven breaths."
 				/>
@@ -93,7 +93,7 @@ const EduScreen = ({ navigation }) => {
 					//
 					id="10edu"
 					tag=" Education"
-					title="Seven breaths 3"
+					title="Seven breaths #3"
 					quoteText="It is a matter of being determined and having the spirit to break
 					right through to the other side."
 				/>
@@ -101,7 +101,7 @@ const EduScreen = ({ navigation }) => {
 					//
 					id="11edu"
 					tag=" Education"
-					title="Wisdom 1"
+					title="Wisdom #1"
 					quoteText="A man received an oral teaching concerning the Bravery. He neither
 					wrote it down nor committed it to memory but rather forgot it
 					completely."
@@ -110,7 +110,7 @@ const EduScreen = ({ navigation }) => {
 					//
 					id="12edu"
 					tag=" Education"
-					title="Wisdom 2"
+					title="Wisdom #2"
 					quoteText="Then, in facing real situations, he acted on impulse and the
 					things that he had learned became wisdom of his own."
 				/>
