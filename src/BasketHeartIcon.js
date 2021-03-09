@@ -9,7 +9,7 @@ import { useStateValue } from "./StateProvider";
 
 //!------------------------------------IMPORTS
 
-const ShoppingCartIcon = () => {
+const BasketHeartIcon = () => {
 	//
 	const navigation = useNavigation();
 	// this is necessary because the navigation was not
@@ -41,4 +41,4 @@ const ShoppingCartIcon = () => {
 	);
 };
 
-export default ShoppingCartIcon;
+export default BasketHeartIcon;

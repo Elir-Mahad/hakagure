@@ -7,7 +7,6 @@ import { StatusBar } from "expo-status-bar";
 //
 import { Image } from "react-native-elements";
 //
-import { Ionicons } from "@expo/vector-icons";
 
 //!-------------------------------------------------IMPORTS
 
@@ -16,18 +15,6 @@ const TableOfContentsScreen = ({ navigation }) => {
 	return (
 		<KeyboardAvoidingView style={styles.table_container}>
 			<StatusBar style="dark" />
-
-			<View style={styles.categories}>
-				<TouchableOpacity
-					style={styles.favourite_category}
-					onPress={() => navigation.navigate("Liked")}
-				>
-					<View style={styles.table_favtitleicon}>
-						<Text style={styles.table_favcategoryname}>Favourites </Text>
-						<Ionicons name="ios-heart-outline" size={24} color="white" />
-					</View>
-				</TouchableOpacity>
-			</View>
 
 			<View style={styles.categories}>
 				<TouchableOpacity

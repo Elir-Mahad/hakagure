@@ -121,36 +121,7 @@ export default StyleSheet.create({
 		backgroundColor: "white",
 		justifyContent: "center"
 	},
-	// liked quotes category
-	favourite_category: {
-		backgroundColor: "black",
-		marginBottom: 15,
-		borderRadius: 3,
-		borderWidth: 1,
-		height: 40,
-		width: 170,
-		margin: 4,
-		paddingLeft: 6,
-		paddingRight: 6,
-		paddingTop: 2,
-		paddingBottom: 6,
-		display: "flex",
-		justifyContent: "space-between"
-	},
-	table_favtitleicon: {
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "space-between",
-		alignItems: "center",
-		flex: 1
-	},
-	table_favcategoryname: {
-		fontFamily: "Inconsolata-Regular",
-		color: "white",
-		fontSize: 17,
-		textAlign: "left"
-	},
-	// rest of the topic categories
+	// Topic categories
 	categories: {
 		display: "flex",
 		flexDirection: "row"

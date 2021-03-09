@@ -6,8 +6,6 @@ import { StatusBar } from "expo-status-bar";
 //
 import QuoteContainer from "../QuoteContainer";
 //
-// import ShoppingCartIcon from "../ShoppingCartIcon";
-//
 import { useStateValue } from "../StateProvider";
 
 //!------------------------------------------------------------IMPORTS

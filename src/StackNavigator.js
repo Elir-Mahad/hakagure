@@ -5,6 +5,9 @@ import React from "react";
 // below imports are from react stack navigation
 import { createStackNavigator } from "@react-navigation/stack";
 
+// import heart/basket icon
+import BasketHeartIcon from "./BasketHeartIcon";
+
 // below are the different screen components
 import WelcomeScreenOne from "./WelcomeScreenOne";
 import WelcomeScreenTwo from "./WelcomeScreenTwo";
@@ -18,7 +21,7 @@ import DeathScreen from "./all_screens/DeathScreen";
 import CharacterScreen from "./all_screens/CharacterScreen";
 import SpeechScreen from "./all_screens/SpeechScreen";
 import TimeScreen from "./all_screens/TimeScreen";
-import ShoppingCartIcon from "./ShoppingCartIcon";
+//
 
 //!--- Declare the global screen options and initialize the createStackNaviagtor
 
@@ -27,7 +30,7 @@ const globalScreenOptions = {
 	headerStyle: { backgroundColor: "#f4f4f2" },
 	headerTitleStyle: { color: "black" },
 	headerTintiColor: "black",
-	headerRight: () => <ShoppingCartIcon />
+	headerRight: () => <BasketHeartIcon />
 };
 
 const Stack = createStackNavigator();
