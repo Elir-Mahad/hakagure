@@ -41,10 +41,13 @@ const LikedQuotesScreen = ({ navigation }) => {
 
 						{/* for every single item, return the checkout products component */}
 
-						{basket.map((item) => (
+						{basket.map((item, index) => (
 							<LikedQuotesContainer
 								//
-								key={item.index}
+								key={index}
+								// adding this will stop this error:
+								// 'Encountered two children with the same key, ``. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.'
+								// More info here: programmersought.com/article/66582053289/
 								id={item.id}
 								tag={item.tag}
 								title={item.title}

@@ -14,7 +14,7 @@ const ConductScreen = ({ navigation }) => {
 	//
 	const [{ basket }] = useStateValue();
 	//
-	console.log(basket);
+	// console.log(basket);
 	//
 	return (
 		<ScrollView style={styles.category_screen}>
