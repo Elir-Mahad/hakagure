@@ -3,9 +3,27 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
 	//On all screens
 	menu: {
-		backgroundColor: "red",
-		marginRight: 100
+		marginLeft: 10
 	},
+	menu_category: {
+		height: 60,
+		width: "100%",
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-between",
+		alignItems: "center"
+	},
+	menu_categoryname: {
+		fontFamily: "Inconsolata-Regular",
+		color: "black",
+		fontSize: 17,
+		marginLeft: -10
+	},
+	menu_categoryimage: {
+		width: 30,
+		height: 30
+	},
+	//
 	basketandcount: {
 		marginRight: 10
 	},
@@ -114,54 +132,6 @@ export default StyleSheet.create({
 		textAlign: "right",
 		borderRadius: 5,
 		color: "white"
-	},
-	//
-	// styles for table of contents
-	//
-	table_container: {
-		flex: 1,
-		alignItems: "center",
-		padding: 10,
-		backgroundColor: "white",
-		justifyContent: "center"
-	},
-	// Topic categories
-	categories: {
-		display: "flex",
-		flexDirection: "row"
-	},
-	table_category: {
-		marginBottom: 15,
-		borderRadius: 3,
-		borderWidth: 1,
-		height: 100,
-		width: 170,
-		margin: 4,
-		paddingLeft: 6,
-		paddingRight: 6,
-		paddingTop: 2,
-		paddingBottom: 6,
-		display: "flex",
-		justifyContent: "space-between"
-	},
-	table_titleandcount: {
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "space-between"
-	},
-	table_categoryname: {
-		fontFamily: "Inconsolata-Regular",
-		color: "black",
-		fontSize: 17,
-		textAlign: "left"
-	},
-	table_categorycount: {
-		fontSize: 17,
-		color: "black"
-	},
-	table_categoryimage: {
-		width: 30,
-		height: 30
 	},
 	//LikeQuotesScreen
 	nolikedqotescontainer: {

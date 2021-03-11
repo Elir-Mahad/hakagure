@@ -1,74 +1,125 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./ScreenStyles";
 import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import { View, Text, TouchableOpacity } from "react-native";
+import {
+	Menu,
+	MenuOptions,
+	MenuOption,
+	MenuTrigger
+} from "react-native-popup-menu";
+import { View, Text, Image } from "react-native";
 
-function MyMenu() {
+const MyMenu = () => {
 	//
 	const navigation = useNavigation();
 	//
-	const [content, setContent] = useState(false);
-	//
 	return (
-		<View style={styles.container}>
-			{/*Here we will return the view when state is true 
-				and will return false if state is false*/}
-			{content ? (
-				//
-				<View>
-					<TouchableOpacity
-						//
-						onPress={() => navigation.navigate("Education")}
-					>
-						<Text> Education </Text>
-					</TouchableOpacity>
+		<View>
+			<Menu>
+				<MenuTrigger
+					//
+					style={styles.menu}
+				>
+					<Feather name="menu" size={24} color="black" />
+				</MenuTrigger>
+				{/*  */}
+				<MenuOptions>
 					{/*  */}
-					<TouchableOpacity
+					<MenuOption
 						//
-						onPress={() => navigation.navigate("Courage")}
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Description")}
 					>
-						<Text> Courage </Text>
-					</TouchableOpacity>
+						<Text style={styles.menu_categoryname}> Descriptin </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/description.png")}
+						/>
+					</MenuOption>
 					{/*  */}
-					<TouchableOpacity
+					<MenuOption
 						//
-						onPress={() => navigation.navigate("Death")}
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Education")}
 					>
-						<Text> Death </Text>
-					</TouchableOpacity>
+						<Text style={styles.menu_categoryname}> Education </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/education.png")}
+						/>
+					</MenuOption>
 					{/*  */}
-					<TouchableOpacity
+					<MenuOption
 						//
-						onPress={() => navigation.navigate("Conduct")}
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Courage")}
 					>
-						<Text> Conduct </Text>
-					</TouchableOpacity>
+						<Text style={styles.menu_categoryname}> Courage </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/character.png")}
+						/>
+					</MenuOption>
 					{/*  */}
-					<TouchableOpacity
+					<MenuOption
 						//
-						onPress={() => navigation.navigate("Speech")}
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Death")}
 					>
-						<Text> Speech </Text>
-					</TouchableOpacity>
+						<Text style={styles.menu_categoryname}> Death </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/death.png")}
+						/>
+					</MenuOption>
 					{/*  */}
-					<TouchableOpacity
+					<MenuOption
 						//
-						onPress={() => navigation.navigate("Time")}
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Conduct")}
 					>
-						<Text> Time </Text>
-					</TouchableOpacity>
+						<Text style={styles.menu_categoryname}> Conduct </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/character.png")}
+						/>
+					</MenuOption>
 					{/*  */}
-				</View>
-			) : null}
-			<TouchableOpacity
-				//
-				onPress={() => setContent(!content)}
-			>
-				<Feather name="menu" size={24} color="black" />
-			</TouchableOpacity>
+					<MenuOption
+						//
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Time")}
+					>
+						<Text style={styles.menu_categoryname}> Time </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/time.png")}
+						/>
+					</MenuOption>
+					{/*  */}
+					<MenuOption
+						//
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Speech")}
+					>
+						<Text style={styles.menu_categoryname}> Speech </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/speech.png")}
+						/>
+					</MenuOption>
+				</MenuOptions>
+			</Menu>
 		</View>
 	);
-}
+};
 
 export default MyMenu;

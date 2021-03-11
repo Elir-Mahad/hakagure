@@ -20,6 +20,9 @@ import reducer from "./src/reducer";
 import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 
+//
+import { MenuProvider } from "react-native-popup-menu";
+
 //! ------------------------------------------------- getFonts function
 
 const getFonts = () =>
@@ -70,7 +73,9 @@ export default function App() {
 			/>
 			<DrawerNavigator /> */}
 			<StateProvider initialState={initialState} reducer={reducer}>
-				<StackNavigator />
+				<MenuProvider>
+					<StackNavigator />
+				</MenuProvider>
 			</StateProvider>
 		</NavigationContainer>
 	);

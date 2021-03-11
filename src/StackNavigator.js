@@ -11,7 +11,7 @@ import BasketHeartIcon from "./BasketHeartIcon";
 // below are the different screen components
 import WelcomeScreenOne from "./WelcomeScreenOne";
 import WelcomeScreenTwo from "./WelcomeScreenTwo";
-import TableOfContentsScreen from "./TableOfContentsScreen";
+// import TableOfContentsScreen from "./TableOfContentsScreen";
 //
 import LikedQuotesScreen from "./all_screens/LikedQuotesScreen";
 // import DislikedQuotes from "./DislikedQuotesScreen";
@@ -22,6 +22,8 @@ import ConductScreen from "./all_screens/ConductScreen";
 import SpeechScreen from "./all_screens/SpeechScreen";
 import TimeScreen from "./all_screens/TimeScreen";
 //
+import MyMenu from "./Menu";
+//
 
 //!--- Declare the global screen options and initialize the createStackNaviagtor
 
@@ -30,7 +32,8 @@ const globalScreenOptions = {
 	headerStyle: { backgroundColor: "#f4f4f2" },
 	headerTitleStyle: { color: "black" },
 	headerTintiColor: "black",
-	headerRight: () => <BasketHeartIcon />
+	headerRight: () => <BasketHeartIcon />,
+	headerLeft: () => <MyMenu />
 };
 
 const Stack = createStackNavigator();
@@ -47,10 +50,10 @@ const StackNavigator = () => {
 				name="Description" // Give the component a name
 				component={WelcomeScreenTwo} // Import the component
 			/>
-			<Stack.Screen
+			{/* <Stack.Screen
 				name="Table of Contents" // Give the component a name
 				component={TableOfContentsScreen} // Import the component
-			/>
+			/> */}
 			<Stack.Screen
 				name="Liked" // Give the component a name
 				component={LikedQuotesScreen} // Import the component
