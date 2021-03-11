@@ -6,6 +6,7 @@ import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 //
 import { Image } from "react-native-elements";
+import MyMenu from "./Menu";
 //
 
 //!-------------------------------------------------IMPORTS
@@ -15,8 +16,11 @@ const TableOfContentsScreen = ({ navigation }) => {
 	return (
 		<KeyboardAvoidingView style={styles.table_container}>
 			<StatusBar style="dark" />
+			<View>
+				<MyMenu />
+			</View>
 
-			<View style={styles.categories}>
+			{/* <View style={styles.categories}>
 				<TouchableOpacity
 					style={styles.table_category}
 					onPress={() => navigation.navigate("Education")}
@@ -32,7 +36,6 @@ const TableOfContentsScreen = ({ navigation }) => {
 						source={require("./screen_assets/education.png")}
 					/>
 
-					{/* 11 quotes */}
 				</TouchableOpacity>
 
 				<TouchableOpacity
@@ -67,7 +70,6 @@ const TableOfContentsScreen = ({ navigation }) => {
 						style={styles.table_categoryimage}
 						source={require("./screen_assets/death.png")}
 					/>
-					{/* 18 quotes */}
 				</TouchableOpacity>
 
 				<TouchableOpacity
@@ -84,7 +86,6 @@ const TableOfContentsScreen = ({ navigation }) => {
 						style={styles.table_categoryimage}
 						source={require("./screen_assets/character.png")}
 					/>
-					{/* 21 quotes */}
 				</TouchableOpacity>
 			</View>
 
@@ -103,7 +104,7 @@ const TableOfContentsScreen = ({ navigation }) => {
 						style={styles.table_categoryimage}
 						source={require("./screen_assets/speech.png")}
 					/>
-					{/* 6 quotes */}
+
 				</TouchableOpacity>
 
 				<TouchableOpacity
@@ -120,9 +121,9 @@ const TableOfContentsScreen = ({ navigation }) => {
 						style={styles.table_categoryimage}
 						source={require("./screen_assets/time.png")}
 					/>
-					{/* 5 quotes */}
+
 				</TouchableOpacity>
-			</View>
+			</View> */}
 		</KeyboardAvoidingView>
 	);
 };

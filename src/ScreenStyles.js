@@ -2,6 +2,10 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
 	//On all screens
+	menu: {
+		backgroundColor: "red",
+		marginRight: 100
+	},
 	basketandcount: {
 		marginRight: 10
 	},
