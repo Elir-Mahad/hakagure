@@ -29,12 +29,26 @@ const MyMenu = () => {
 					style={styles.menuoptionsbox}
 				>
 					{/*  */}
+
 					<MenuOption
 						//
 						style={styles.menu_category}
-						onSelect={() => navigation.navigate("Description")}
+						onSelect={() => navigation.navigate("User guide")}
 					>
-						<Text style={styles.menu_categoryname}> Book Description </Text>
+						<Text style={styles.menu_categoryname}> User guide </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/info.png")}
+						/>
+					</MenuOption>
+					{/*  */}
+					<MenuOption
+						//
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Description がいよう")}
+					>
+						<Text style={styles.menu_categoryname}> Synopsis </Text>
 						<Image
 							//
 							style={styles.menu_categoryimage}
@@ -45,7 +59,7 @@ const MyMenu = () => {
 					<MenuOption
 						//
 						style={styles.menu_category}
-						onSelect={() => navigation.navigate("Education")}
+						onSelect={() => navigation.navigate("Education きょういく")}
 					>
 						<Text style={styles.menu_categoryname}> Education </Text>
 						<Image
@@ -58,7 +72,7 @@ const MyMenu = () => {
 					<MenuOption
 						//
 						style={styles.menu_category}
-						onSelect={() => navigation.navigate("Courage")}
+						onSelect={() => navigation.navigate("Courage ゆうき")}
 					>
 						<Text style={styles.menu_categoryname}> Courage </Text>
 						<Image
@@ -71,7 +85,7 @@ const MyMenu = () => {
 					<MenuOption
 						//
 						style={styles.menu_category}
-						onSelect={() => navigation.navigate("Death")}
+						onSelect={() => navigation.navigate("Death しに")}
 					>
 						<Text style={styles.menu_categoryname}> Death </Text>
 						<Image
@@ -84,7 +98,7 @@ const MyMenu = () => {
 					<MenuOption
 						//
 						style={styles.menu_category}
-						onSelect={() => navigation.navigate("Conduct")}
+						onSelect={() => navigation.navigate("Conduct こうどう")}
 					>
 						<Text style={styles.menu_categoryname}> Conduct </Text>
 						<Image
@@ -97,7 +111,20 @@ const MyMenu = () => {
 					<MenuOption
 						//
 						style={styles.menu_category}
-						onSelect={() => navigation.navigate("Time")}
+						onSelect={() => navigation.navigate("Speech ことば")}
+					>
+						<Text style={styles.menu_categoryname}> Speech </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/speech.png")}
+						/>
+					</MenuOption>
+					{/*  */}
+					<MenuOption
+						//
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Time じかん")}
 					>
 						<Text style={styles.menu_categoryname}> Time </Text>
 						<Image
@@ -107,18 +134,6 @@ const MyMenu = () => {
 						/>
 					</MenuOption>
 					{/*  */}
-					<MenuOption
-						//
-						style={styles.menu_category}
-						onSelect={() => navigation.navigate("Speech")}
-					>
-						<Text style={styles.menu_categoryname}> Speech </Text>
-						<Image
-							//
-							style={styles.menu_categoryimage}
-							source={require("./screen_assets/speech.png")}
-						/>
-					</MenuOption>
 				</MenuOptions>
 			</Menu>
 		</View>

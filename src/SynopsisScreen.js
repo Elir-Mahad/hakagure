@@ -9,7 +9,7 @@ import { Image } from "react-native-elements";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 //!------------------------------------------------------------IMPORTS
 
-const DescriptionScreen = ({ navigation }) => {
+const SynopsisScreen = ({ navigation }) => {
 	//
 	return (
 		<KeyboardAvoidingView style={styles.DescriptionContainer}>
@@ -34,7 +34,7 @@ const DescriptionScreen = ({ navigation }) => {
 			<TouchableOpacity
 				//
 				style={styles.next_button}
-				onPress={() => navigation.navigate("Education")}
+				onPress={() => navigation.navigate("Education きょういく")}
 			>
 				<MaterialCommunityIcons
 					//
@@ -48,4 +48,4 @@ const DescriptionScreen = ({ navigation }) => {
 		</KeyboardAvoidingView>
 	);
 };
-export default DescriptionScreen;
+export default SynopsisScreen;

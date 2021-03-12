@@ -2,11 +2,12 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
 	//On all screens
+	// menu
 	menuicon_trigger: {
 		marginLeft: 10
 	},
 	menu_category: {
-		height: 60,
+		height: 55,
 		width: "100%",
 		display: "flex",
 		flexDirection: "row",
@@ -19,11 +20,33 @@ export default StyleSheet.create({
 		fontFamily: "Inconsolata-Regular",
 		color: "black",
 		fontSize: 17,
-		marginLeft: -10
+		marginBottom: 5
 	},
 	menu_categoryimage: {
 		width: 30,
-		height: 30
+		height: 30,
+		marginRight: 7
+	},
+	// user guide
+	userGuideContainer: {
+		flex: 1,
+		alignItems: "center",
+		justifyContent: "center",
+		backgroundColor: "white"
+	},
+	guideimage: {
+		width: 60,
+		height: 60
+	},
+	guidetext: {
+		fontFamily: "Inconsolata-Regular",
+		fontSize: 15,
+		marginRight: 15,
+		marginLeft: 15,
+		color: "black",
+		padding: 10,
+		borderBottomWidth: 1,
+		borderColor: "lightgrey"
 	},
 	//
 	basketandcount: {

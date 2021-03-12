@@ -54,7 +54,7 @@ const WelcomeScreen = ({ navigation }) => {
 				<TouchableOpacity
 					//
 					style={styles.next_button}
-					onPress={() => navigation.navigate("Description")}
+					onPress={() => navigation.navigate("Synopsis がいよう")}
 				>
 					<MaterialCommunityIcons
 						//

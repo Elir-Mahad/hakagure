@@ -10,7 +10,7 @@ import BasketHeartIcon from "./BasketHeartIcon";
 
 // below are the different screen components
 import WelcomeScreen from "./WelcomeScreen";
-import DescriptionScreen from "./DescriptionScreen";
+import SynopsisScreen from "./SynopsisScreen";
 //
 import LikedQuotesScreen from "./all_screens/LikedQuotesScreen";
 import EduScreen from "./all_screens/EduScreen";
@@ -21,6 +21,7 @@ import SpeechScreen from "./all_screens/SpeechScreen";
 import TimeScreen from "./all_screens/TimeScreen";
 //
 import MyMenu from "./Menu";
+import UserGuide from "./UserGuide";
 //
 
 //!--- Declare the global screen options and initialize the createStackNaviagtor
@@ -28,7 +29,11 @@ import MyMenu from "./Menu";
 const globalScreenOptions = {
 	// The constant globalScreenOptions stores the below css styles
 	headerStyle: { backgroundColor: "#f4f4f2" },
-	headerTitleStyle: { color: "black" },
+	headerTitleStyle: {
+		color: "black",
+		fontSize: 18,
+		fontFamily: "Inconsolata-Regular"
+	},
 	headerTintiColor: "black",
 	headerRight: () => <BasketHeartIcon />,
 	headerLeft: () => <MyMenu />
@@ -41,39 +46,43 @@ const StackNavigator = () => {
 	return (
 		<Stack.Navigator screenOptions={globalScreenOptions}>
 			<Stack.Screen
-				name="Welcome" // Give the component a name
+				name="Welcome あいさつ" // Give the component a name
 				component={WelcomeScreen} // Import the component
 			/>
 			<Stack.Screen
-				name="Description" // Give the component a name
-				component={DescriptionScreen} // Import the component
+				name="User guide" // Give the component a name
+				component={UserGuide} // Import the component
+			/>
+			<Stack.Screen
+				name="Synopsis がいよう" // Give the component a name
+				component={SynopsisScreen} // Import the component
 			/>
 			<Stack.Screen
 				name="Liked" // Give the component a name
 				component={LikedQuotesScreen} // Import the component
 			/>
 			<Stack.Screen
-				name="Education" // Give the component a name
+				name="Education きょういく" // Give the component a name
 				component={EduScreen} // Import the component
 			/>
 			<Stack.Screen
-				name="Courage" // Give the component a name
+				name="Courage ゆうき" // Give the component a name
 				component={CourageScreen} // Import the component
 			/>
 			<Stack.Screen
-				name="Death" // Give the component a name
+				name="Death しに" // Give the component a name
 				component={DeathScreen} // Import the component
 			/>
 			<Stack.Screen
-				name="Conduct" // Give the component a name
+				name="Conduct こうどう" // Give the component a name
 				component={ConductScreen} // Import the component
 			/>
 			<Stack.Screen
-				name="Speech" // Give the component a name
+				name="Speech ことば" // Give the component a name
 				component={SpeechScreen} // Import the component
 			/>
 			<Stack.Screen
-				name="Time" // Give the component a name
+				name="Time じかん" // Give the component a name
 				component={TimeScreen} // Import the component
 			/>
 		</Stack.Navigator>
