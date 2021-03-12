@@ -10,7 +10,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import StackNavigator from "./src/StackNavigator";
 
 // below are the different screen components
-import WelcomeScreenOne from "./src/WelcomeScreenOne";
+import WelcomeScreen from "./src/WelcomeScreen";
 //
 import { StateProvider } from "./src/StateProvider";
 import { initialState } from "./src/reducer.js";
@@ -43,7 +43,7 @@ export default function App() {
 
 	if (fontsLoaded) {
 		// if the fonts are loaded
-		<WelcomeScreenOne />;
+		<WelcomeScreen />;
 		// then return the welcome screen
 	} else {
 		// othewrise

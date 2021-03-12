@@ -10,7 +10,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 //!------------------------------------------------------------IMPORTS
 
-const WelcomeScreenOne = ({ navigation }) => {
+const WelcomeScreen = ({ navigation }) => {
 	//
 	return (
 		<KeyboardAvoidingView style={styles.welcome_container}>
@@ -59,7 +59,7 @@ const WelcomeScreenOne = ({ navigation }) => {
 					<MaterialCommunityIcons
 						//
 						name="chevron-right-circle-outline"
-						size={54}
+						size={40}
 						color="white"
 					/>
 				</TouchableOpacity>
@@ -68,4 +68,4 @@ const WelcomeScreenOne = ({ navigation }) => {
 		</KeyboardAvoidingView>
 	);
 };
-export default WelcomeScreenOne;
+export default WelcomeScreen;

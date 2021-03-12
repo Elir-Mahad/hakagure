@@ -9,7 +9,7 @@ import { Image } from "react-native-elements";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 //!------------------------------------------------------------IMPORTS
 
-const WelcomeScreenTwo = ({ navigation }) => {
+const DescriptionScreen = ({ navigation }) => {
 	//
 	return (
 		<KeyboardAvoidingView style={styles.DescriptionContainer}>
@@ -34,12 +34,12 @@ const WelcomeScreenTwo = ({ navigation }) => {
 			<TouchableOpacity
 				//
 				style={styles.next_button}
-				onPress={() => navigation.navigate("Table of Contents")}
+				onPress={() => navigation.navigate("Education")}
 			>
 				<MaterialCommunityIcons
 					//
 					name="chevron-right-circle-outline"
-					size={54}
+					size={40}
 					color="white"
 				/>
 			</TouchableOpacity>
@@ -48,4 +48,4 @@ const WelcomeScreenTwo = ({ navigation }) => {
 		</KeyboardAvoidingView>
 	);
 };
-export default WelcomeScreenTwo;
+export default DescriptionScreen;

@@ -34,7 +34,7 @@ const MyMenu = () => {
 						style={styles.menu_category}
 						onSelect={() => navigation.navigate("Description")}
 					>
-						<Text style={styles.menu_categoryname}> Descriptin </Text>
+						<Text style={styles.menu_categoryname}> Book Description </Text>
 						<Image
 							//
 							style={styles.menu_categoryimage}

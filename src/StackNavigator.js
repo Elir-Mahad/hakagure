@@ -9,12 +9,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import BasketHeartIcon from "./BasketHeartIcon";
 
 // below are the different screen components
-import WelcomeScreenOne from "./WelcomeScreenOne";
-import WelcomeScreenTwo from "./WelcomeScreenTwo";
-// import TableOfContentsScreen from "./TableOfContentsScreen";
+import WelcomeScreen from "./WelcomeScreen";
+import DescriptionScreen from "./DescriptionScreen";
 //
 import LikedQuotesScreen from "./all_screens/LikedQuotesScreen";
-// import DislikedQuotes from "./DislikedQuotesScreen";
 import EduScreen from "./all_screens/EduScreen";
 import CourageScreen from "./all_screens/CourageScreen";
 import DeathScreen from "./all_screens/DeathScreen";
@@ -44,16 +42,12 @@ const StackNavigator = () => {
 		<Stack.Navigator screenOptions={globalScreenOptions}>
 			<Stack.Screen
 				name="Welcome" // Give the component a name
-				component={WelcomeScreenOne} // Import the component
+				component={WelcomeScreen} // Import the component
 			/>
 			<Stack.Screen
 				name="Description" // Give the component a name
-				component={WelcomeScreenTwo} // Import the component
+				component={DescriptionScreen} // Import the component
 			/>
-			{/* <Stack.Screen
-				name="Table of Contents" // Give the component a name
-				component={TableOfContentsScreen} // Import the component
-			/> */}
 			<Stack.Screen
 				name="Liked" // Give the component a name
 				component={LikedQuotesScreen} // Import the component
