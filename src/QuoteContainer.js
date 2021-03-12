@@ -70,7 +70,7 @@ function QuoteContainer({ id, tag, title, quoteText }) {
 				<TouchableHighlight
 					//
 					onPress={addToBasket}
-					underlayColor="red"
+					underlayColor="grey"
 					style={{ padding: 5 }}
 				>
 					<AntDesign

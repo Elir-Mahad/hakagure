@@ -21,11 +21,11 @@ const UserGuide = () => {
 			/>
 			{/*  */}
 			<Text style={styles.guidetext}>
-				Find a quote that you like, press the heart icon.
+				Find a quote that you like, press the heart icon of that quote.
 			</Text>
 			<Text style={styles.guidetext}>
-				Click on the heart icon on the top right, and your liked quotes will
-				appear.
+				Click on the heart icon on the top right, and your liked quote/quotes
+				will appear.
 			</Text>
 			<Text style={styles.guidetext}>
 				On the top left of the quote box, you will see the name of the category

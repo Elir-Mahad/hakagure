@@ -27,6 +27,26 @@ export default StyleSheet.create({
 		height: 30,
 		marginRight: 7
 	},
+	//
+	basketandcount: {
+		marginRight: 10,
+		paddingRight: 30,
+		paddingTop: 15
+	},
+	itemcount: {
+		position: "absolute",
+		height: 33,
+		width: 30,
+		borderRadius: 15,
+		backgroundColor: "black",
+		color: "white",
+		right: 0,
+		bottom: 10,
+		padding: 7,
+		alignItems: "center",
+		textAlign: "center",
+		justifyContent: "center"
+	},
 	// user guide
 	userGuideContainer: {
 		flex: 1,
@@ -48,25 +68,7 @@ export default StyleSheet.create({
 		borderBottomWidth: 1,
 		borderColor: "lightgrey"
 	},
-	//
-	basketandcount: {
-		marginRight: 10
-	},
-	itemcount: {
-		position: "absolute",
-		height: 33,
-		width: 30,
-		borderRadius: 15,
-		backgroundColor: "black",
-		color: "white",
-		right: 30,
-		bottom: 10,
-		padding: 7,
-		alignItems: "center",
-		textAlign: "center",
-		justifyContent: "center"
-	},
-	// Styles for WelcomeOneScreen
+	// Styles for WelcomeScreen
 	//
 	welcome_container: {
 		flex: 1,
@@ -107,15 +109,6 @@ export default StyleSheet.create({
 		textAlign: "center",
 		color: "white"
 	},
-	next_button: {
-		alignItems: "center",
-		alignSelf: "center",
-		justifyContent: "center"
-	},
-	right_arrow: {
-		width: 30,
-		height: 30
-	},
 	WelcomeBackgroundImage: {
 		flex: 1,
 		resizeMode: "cover",
@@ -124,7 +117,7 @@ export default StyleSheet.create({
 		borderTopRightRadius: 5,
 		borderTopLeftRadius: 5
 	},
-	// WelcomeScreenTwo
+	// SynopsisScreen
 	DescriptionContainer: {
 		flex: 1,
 		alignItems: "center",
@@ -136,6 +129,8 @@ export default StyleSheet.create({
 		height: 250,
 		marginTop: 20,
 		marginBottom: 10,
+		borderColor: "white",
+		borderWidth: 1,
 		borderRadius: 10
 	},
 	DescriptionTextOne: {
