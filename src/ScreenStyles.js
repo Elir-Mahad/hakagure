@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
 	//On all screens
-	menu: {
+	menuicon_trigger: {
 		marginLeft: 10
 	},
 	menu_category: {
@@ -11,7 +11,9 @@ export default StyleSheet.create({
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-between",
-		alignItems: "center"
+		alignItems: "center",
+		borderBottomColor: "lightgrey",
+		borderBottomWidth: 1
 	},
 	menu_categoryname: {
 		fontFamily: "Inconsolata-Regular",

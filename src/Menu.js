@@ -19,12 +19,15 @@ const MyMenu = () => {
 			<Menu>
 				<MenuTrigger
 					//
-					style={styles.menu}
+					style={styles.menuicon_trigger}
 				>
 					<Feather name="menu" size={24} color="black" />
 				</MenuTrigger>
 				{/*  */}
-				<MenuOptions>
+				<MenuOptions
+					//
+					style={styles.menuoptionsbox}
+				>
 					{/*  */}
 					<MenuOption
 						//
