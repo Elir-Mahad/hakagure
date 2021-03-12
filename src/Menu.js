@@ -29,7 +29,19 @@ const MyMenu = () => {
 					style={styles.menuoptionsbox}
 				>
 					{/*  */}
-
+					<MenuOption
+						//
+						style={styles.menu_category}
+						onSelect={() => navigation.navigate("Welcome あいさつ")}
+					>
+						<Text style={styles.menu_categoryname}> Welcome </Text>
+						<Image
+							//
+							style={styles.menu_categoryimage}
+							source={require("./screen_assets/samurai.png")}
+						/>
+					</MenuOption>
+					{/*  */}
 					<MenuOption
 						//
 						style={styles.menu_category}
@@ -46,7 +58,7 @@ const MyMenu = () => {
 					<MenuOption
 						//
 						style={styles.menu_category}
-						onSelect={() => navigation.navigate("Description がいよう")}
+						onSelect={() => navigation.navigate("Synopsis がいよう")}
 					>
 						<Text style={styles.menu_categoryname}> Synopsis </Text>
 						<Image

@@ -2,11 +2,10 @@
 import React from "react";
 import styles from "./ScreenStyles";
 //
-import { TouchableOpacity, Text, View, ImageBackground } from "react-native";
+import { Text, View, ImageBackground } from "react-native";
 import { KeyboardAvoidingView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 //
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 //!------------------------------------------------------------IMPORTS
 
@@ -51,18 +50,6 @@ const WelcomeScreen = ({ navigation }) => {
 						{/* 葉隠 - 山本 常朝  */}
 					</View>
 				</View>
-				<TouchableOpacity
-					//
-					style={styles.next_button}
-					onPress={() => navigation.navigate("Synopsis がいよう")}
-				>
-					<MaterialCommunityIcons
-						//
-						name="chevron-right-circle-outline"
-						size={40}
-						color="white"
-					/>
-				</TouchableOpacity>
 				{/*  */}
 			</ImageBackground>
 		</KeyboardAvoidingView>
